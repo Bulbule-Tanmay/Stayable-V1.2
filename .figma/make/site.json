@@ -1,0 +1,11 @@
+{
+  "title": "stayable",
+  "description": "Create fully functional websites effortlessly with this intuitive platform, designed for users of all skill levels to build and launch online presence.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
