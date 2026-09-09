@@ -18,6 +18,13 @@ const AMENITY_OPTIONS = [
 
 type Tier = { label: string; price: string };
 
+const Field = ({ label, children }: { label: string; children: React.ReactNode }) => (
+  <div className="flex flex-col gap-1.5">
+    <label className="text-xs font-semibold text-on-surface-muted">{label}</label>
+    {children}
+  </div>
+);
+
 export default function OwnerListingForm() {
   const navigate = useNavigate();
   const { id } = useParams();
@@ -111,13 +118,6 @@ export default function OwnerListingForm() {
       setSaving(false);
     }
   };
-
-  const Field = ({ label, children }: { label: string; children: React.ReactNode }) => (
-    <div className="flex flex-col gap-1.5">
-      <label className="text-xs font-semibold text-on-surface-muted">{label}</label>
-      {children}
-    </div>
-  );
 
   const inputCls = "w-full h-12 px-4 rounded-xl bg-white border border-surface-high text-sm font-medium text-on-surface placeholder:text-on-surface-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary";
 
