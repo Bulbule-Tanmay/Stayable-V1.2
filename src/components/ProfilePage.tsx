@@ -199,7 +199,7 @@ export default function ProfilePage({
               else if (item.action)
                 setNotice(`${item.label} settings will be available soon.`)
             }}
-            className={`w-full flex items-center gap-3 px-4 py-4 text-left active:bg-surface-low transition-colors ${
+            className={`w-full flex items-center gap-3 px-4 py-4 text-left outline-none focus:outline-none active:bg-surface-low transition-colors ${
               item.danger ? "opacity-80" : ""
             }`}
           >
