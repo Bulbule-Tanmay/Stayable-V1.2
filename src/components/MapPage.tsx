@@ -60,9 +60,9 @@ export default function MapPage({
   }
 
   return (
-    <div className="relative flex min-h-[calc(100vh-4rem)] w-full flex-col bg-surface md:px-5 md:py-4">
+    <div className="flex flex-col w-full relative">
       {/* Top anchor bar */}
-      <div className="z-30 px-3 pt-2 pb-2 md:absolute md:left-8 md:top-7 md:w-[420px] md:p-0">
+      <div className="px-3 pt-2 pb-2 z-30">
         <div className="bg-white/95 backdrop-blur-md rounded-2xl p-3 shadow-md flex items-center justify-between gap-3">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-full bg-surface-mid flex items-center justify-center text-secondary shrink-0">
@@ -96,7 +96,8 @@ export default function MapPage({
 
       {/* Map canvas */}
       <div
-        className="relative mx-3 h-[420px] w-[calc(100%_-_1.5rem)] overflow-hidden rounded-2xl bg-surface-mid md:mx-0 md:h-[calc(100vh-6rem)] md:w-full md:rounded-3xl"
+        className="relative w-full h-[420px] overflow-hidden bg-surface-mid mx-3 rounded-2xl"
+        style={{ width: "calc(100% - 1.5rem)" }}
       >
         {/* SVG map background */}
         <svg
@@ -299,7 +300,7 @@ export default function MapPage({
       </div>
 
       {/* Selected listing docked card */}
-      <div className="mt-3 px-3 pb-28 md:absolute md:bottom-5 md:left-8 md:z-40 md:mt-0 md:w-[390px] md:p-0">
+      <div className="px-3 mt-3 pb-28">
         <div className="bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-3">
           <div className="flex gap-3 items-start">
             <div className="relative w-24 h-24 rounded-xl overflow-hidden shrink-0 bg-surface-mid">
