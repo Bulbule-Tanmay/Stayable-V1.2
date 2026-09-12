@@ -15,17 +15,25 @@ async function getAuthHeader(): Promise<Record<string, string>> {
 async function req<T>(path: string, init?: RequestInit): Promise<T> {
   const authHeaders = await getAuthHeader()
 
-  const res = await fetch(`${BASE}${path}`, {
-    ...init,
+  let res: Response
 
-    headers: {
-      "Content-Type": "application/json",
+  try {
+    res = await fetch(`${BASE}${path}`, {
+      ...init,
 
-      ...authHeaders,
+      headers: {
+        "Content-Type": "application/json",
 
-      ...(init?.headers ?? {}),
-    },
-  })
+        ...authHeaders,
+
+        ...(init?.headers ?? {}),
+      },
+    })
+  } catch {
+    throw new Error(
+      "The Stayable server is unavailable. Deploy the Supabase server function before submitting a listing.",
+    )
+  }
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({ error: res.statusText }))

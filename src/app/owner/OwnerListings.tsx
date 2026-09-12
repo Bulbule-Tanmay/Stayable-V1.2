@@ -15,14 +15,22 @@ export default function OwnerListings() {
 
   const [error, setError] = useState("")
 
-  const load = () =>
-    getOwnerListings()
+  const load = () => {
+    setLoading(true)
+    setError("")
 
+    return getOwnerListings()
       .then(setItems)
-
-      .catch(() => setItems([]))
-
+      .catch((e: unknown) => {
+        setItems([])
+        setError(
+          e instanceof Error
+            ? e.message
+            : "Unable to load your listings. Please try again.",
+        )
+      })
       .finally(() => setLoading(false))
+  }
 
   useEffect(() => {
     load()
@@ -33,11 +41,16 @@ export default function OwnerListings() {
 
     setDeleting(id)
 
-    await deleteListing(id).catch(() => {})
-
-    setItems((prev) => prev.filter((l) => l.id !== id))
-
-    setDeleting(null)
+    try {
+      await deleteListing(id)
+      setItems((prev) => prev.filter((l) => l.id !== id))
+    } catch (e: unknown) {
+      setError(
+        e instanceof Error ? e.message : "Unable to delete listing.",
+      )
+    } finally {
+      setDeleting(null)
+    }
   }
 
   const handleToggle = async (l: any) => {

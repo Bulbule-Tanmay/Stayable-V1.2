@@ -187,7 +187,13 @@ export default function OwnerListingForm() {
 
         setImageUrls([...(item.images ?? []), "", ""].slice(0, 3))
       })
-      .catch(() => {})
+      .catch((e: unknown) => {
+        setError(
+          e instanceof Error
+            ? e.message
+            : "Unable to load this listing for editing.",
+        )
+      })
   }, [id, isEdit])
 
   const update = (k: string, v: any) => setForm((f) => ({ ...f, [k]: v }))
