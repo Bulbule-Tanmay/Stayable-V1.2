@@ -1,156 +1,306 @@
-import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router";
-import { createListing, updateListing, getOwnerListings } from "../../lib/api";
+import { useState, useEffect } from "react"
 
+import { useNavigate, useParams } from "react-router"
+
+import { createListing, updateListing, getOwnerListings } from "../../lib/api"
 
 const AMENITY_OPTIONS = [
   { icon: "restaurant", label: "Food Included" },
+
   { icon: "wifi", label: "Wi-Fi" },
+
   { icon: "ac_unit", label: "AC" },
+
   { icon: "cleaning_services", label: "Daily Maid" },
+
   { icon: "local_laundry_service", label: "Laundry" },
+
   { icon: "videocam", label: "CCTV" },
+
   { icon: "fitness_center", label: "Gym" },
+
   { icon: "local_parking", label: "Parking" },
+
   { icon: "water_drop", label: "RO Water" },
+
   { icon: "battery_charging_full", label: "Power Backup" },
-];
+]
 
 type Tier = { label: string; price: string };
 
 export default function OwnerListingForm() {
-  const navigate = useNavigate();
-  const { id } = useParams();
-  const isEdit = Boolean(id);
+  const navigate = useNavigate()
 
-  const [saving, setSaving] = useState(false);
+  const { id } = useParams()
+
+  const isEdit = Boolean(id)
+
+  const [saving, setSaving] = useState(false)
+
+  const [error, setError] = useState("")
+
   const [form, setForm] = useState({
     name: "",
+
     type: "pg" as "pg" | "flat",
+
     gender: "coed" as "boys" | "girls" | "coed" | "unisex",
+
     gender_label: "",
+
     address: "",
+
     campus: "MIT-WPU Pune",
+
     distance: "",
+
     walk_time: "",
+
     phone: "",
+
     deposit: "",
+
     price_from: "",
+
     badge: "",
+
     instant: false,
-  });
-  const [tiers, setTiers] = useState<Tier[]>([{ label: "Double", price: "" }]);
-  const [selectedAmenities, setSelectedAmenities] = useState<string[]>([]);
-  const [imageUrls, setImageUrls] = useState<string[]>(["", "", ""]);
+
+    pin_x: "",
+
+    pin_y: "",
+  })
+
+  const [tiers, setTiers] = useState<Tier[]>([{ label: "Double", price: "" }])
+
+  const [selectedAmenities, setSelectedAmenities] = useState<string[]>([])
+
+  const [imageUrls, setImageUrls] = useState<string[]>(["", "", ""])
 
   useEffect(() => {
-    if (!isEdit || !id) return;
-    getOwnerListings().then((items) => {
-      const item = items.find((l) => l.id === id);
-      if (!item) return;
-      setForm({
-        name: item.name ?? "",
-        type: item.type ?? "pg",
-        gender: item.gender ?? "coed",
-        gender_label: item.gender_label ?? "",
-        address: item.address ?? "",
-        campus: item.campus ?? "MIT-WPU Pune",
-        distance: item.distance ?? "",
-        walk_time: item.walk_time ?? item.walkTime ?? "",
-        phone: item.phone ?? "",
-        deposit: item.deposit ?? "",
-        price_from: String(item.price_from ?? item.priceFrom ?? ""),
-        badge: item.badge ?? "",
-        instant: item.instant ?? false,
-      });
-      setTiers((item.tiers ?? []).map((t: any) => ({ label: t.label, price: String(t.price) })));
-      setSelectedAmenities((item.amenities ?? []).map((a: any) => a.label));
-      setImageUrls([...(item.images ?? []), "", ""].slice(0, 3));
-    }).catch(() => {});
-  }, [id, isEdit]);
+    if (!isEdit || !id) return
 
-  const update = (k: string, v: any) => setForm((f) => ({ ...f, [k]: v }));
+    getOwnerListings()
+      .then((items) => {
+        const item = items.find((l) => l.id === id)
+
+        if (!item) return
+
+        setForm({
+          name: item.name ?? "",
+
+          type: item.type ?? "pg",
+
+          gender: item.gender ?? "coed",
+
+          gender_label: item.gender_label ?? "",
+
+          address: item.address ?? "",
+
+          campus: item.campus ?? "MIT-WPU Pune",
+
+          distance: item.distance ?? "",
+
+          walk_time: item.walk_time ?? item.walkTime ?? "",
+
+          phone: item.phone ?? "",
+
+          deposit: item.deposit ?? "",
+
+          price_from: String(item.price_from ?? item.priceFrom ?? ""),
+
+          badge: item.badge ?? "",
+
+          instant: item.instant ?? false,
+
+          pin_x: item.pin_x == null ? "" : String(item.pin_x),
+
+          pin_y: item.pin_y == null ? "" : String(item.pin_y),
+        })
+
+        setTiers(
+          (item.tiers ?? []).map((t: any) => ({
+            label: t.label,
+            price: String(t.price),
+          })),
+        )
+
+        setSelectedAmenities((item.amenities ?? []).map((a: any) => a.label))
+
+        setImageUrls([...(item.images ?? []), "", ""].slice(0, 3))
+      })
+      .catch(() => {})
+  }, [id, isEdit])
+
+  const update = (k: string, v: any) => setForm((f) => ({ ...f, [k]: v }))
 
   const toggleAmenity = (label: string) =>
     setSelectedAmenities((prev) =>
-      prev.includes(label) ? prev.filter((a) => a !== label) : [...prev, label]
-    );
+      prev.includes(label) ? prev.filter((a) => a !== label) : [...prev, label],
+    )
 
-  const addTier = () => setTiers((prev) => [...prev, { label: "", price: "" }]);
-  const removeTier = (i: number) => setTiers((prev) => prev.filter((_, idx) => idx !== i));
+  const addTier = () => setTiers((prev) => [...prev, { label: "", price: "" }])
+
+  const removeTier = (i: number) =>
+    setTiers((prev) => prev.filter((_, idx) => idx !== i))
+
   const updateTier = (i: number, k: keyof Tier, v: string) =>
-    setTiers((prev) => prev.map((t, idx) => (idx === i ? { ...t, [k]: v } : t)));
+    setTiers((prev) => prev.map((t, idx) => (idx === i ? { ...t, [k]: v } : t)))
 
   const handleSave = async () => {
-    setSaving(true);
-    const payload = {
+    if (
+      !form.name.trim() ||
+      !form.price_from ||
+      !form.address.trim() ||
+      !form.phone.trim()
+    ) {
+      setError("Name, address, phone, and starting price are required.")
 
+      return
+    }
+
+    setSaving(true)
+
+    setError("")
+
+    const payload = {
       ...form,
+
+      pin_x: form.pin_x === "" ? null : Number(form.pin_x),
+
+      pin_y: form.pin_y === "" ? null : Number(form.pin_y),
+
+      gender_label:
+        form.gender === "boys"
+          ? "Boys Only"
+          : form.gender === "girls"
+            ? "Girls Only"
+            : form.gender === "coed"
+              ? "Co-ed"
+              : "Unisex",
+
       price_from: parseInt(form.price_from) || 0,
-      tiers: tiers.filter((t) => t.label && t.price).map((t) => ({ label: t.label, price: parseInt(t.price) })),
-      amenities: AMENITY_OPTIONS.filter((a) => selectedAmenities.includes(a.label)),
+
+      tiers: tiers
+        .filter((t) => t.label && t.price)
+        .map((t) => ({ label: t.label, price: parseInt(t.price) })),
+
+      amenities: AMENITY_OPTIONS.filter((a) =>
+        selectedAmenities.includes(a.label),
+      ),
+
       highlights: [],
+
       images: imageUrls.filter(Boolean),
+
       wa_message: `Hi%2C%20I%20saw%20${encodeURIComponent(form.name)}%20on%20Stayable`,
+
       price_suffix: "/month",
+
       is_active: true,
+
       is_approved: false,
+
       rating: 0,
+
       review_count: 0,
-    };
+    }
+
     try {
       if (isEdit && id) {
-        await updateListing(id, payload);
+        await updateListing(id, payload)
       } else {
-        await createListing(payload);
+        await createListing(payload)
       }
-      navigate("/owner/listings");
-    } catch {
-      navigate("/owner/listings");
-    } finally {
-      setSaving(false);
-    }
-  };
 
-  const Field = ({ label, children }: { label: string; children: React.ReactNode }) => (
+      navigate("/owner/listings")
+    } catch (e: any) {
+      setError(e.message ?? "Unable to save listing. Please try again.")
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  const Field = ({
+    label,
+    children,
+  }: {
+    label: string
+    children: React.ReactNode
+  }) => (
     <div className="flex flex-col gap-1.5">
-      <label className="text-xs font-semibold text-on-surface-muted">{label}</label>
+      <label className="text-xs font-semibold text-on-surface-muted">
+        {label}
+      </label>
       {children}
     </div>
-  );
+  )
 
-  const inputCls = "w-full h-12 px-4 rounded-xl bg-white border border-surface-high text-sm font-medium text-on-surface placeholder:text-on-surface-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary";
+  const inputCls =
+    "w-full h-12 px-4 rounded-xl bg-white border border-surface-high text-sm font-medium text-on-surface placeholder:text-on-surface-muted/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
 
   return (
     <div className="py-6 flex flex-col gap-6 max-w-2xl">
       {/* Header */}
       <div className="flex items-center gap-3">
-        <button onClick={() => navigate(-1)} className="w-9 h-9 rounded-xl bg-surface-low flex items-center justify-center">
-          <span className="material-symbols-outlined text-[20px]">arrow_back</span>
+        <button
+          onClick={() => navigate(-1)}
+          className="w-9 h-9 rounded-xl bg-surface-low flex items-center justify-center"
+        >
+          <span className="material-symbols-outlined text-[20px]">
+            arrow_back
+          </span>
         </button>
         <div>
-          <h1 className="font-display text-xl font-extrabold text-on-surface">{isEdit ? "Edit Listing" : "New Listing"}</h1>
-          <p className="text-xs text-on-surface-muted">{isEdit ? "Update your property details" : "Fill in your property details"}</p>
+          <h1 className="font-display text-xl font-extrabold text-on-surface">
+            {isEdit ? "Edit Listing" : "New Listing"}
+          </h1>
+          <p className="text-xs text-on-surface-muted">
+            {isEdit
+              ? "Update your property details"
+              : "Fill in your property details"}
+          </p>
         </div>
       </div>
+      {error && (
+        <div className="rounded-xl border border-red-200 bg-red-50 p-3 text-xs font-semibold text-red-700">
+          {error}
+        </div>
+      )}
 
       {/* Basic info */}
       <section className="bg-white rounded-2xl p-5 flex flex-col gap-4 shadow-sm">
-        <h2 className="font-display text-base font-bold text-on-surface">Basic Information</h2>
+        <h2 className="font-display text-base font-bold text-on-surface">
+          Basic Information
+        </h2>
 
         <Field label="Property Name *">
-          <input type="text" value={form.name} onChange={(e) => update("name", e.target.value)} placeholder="e.g. Sunrise Premium PG" className={inputCls} />
+          <input
+            type="text"
+            value={form.name}
+            onChange={(e) => update("name", e.target.value)}
+            placeholder="e.g. Sunrise Premium PG"
+            className={inputCls}
+          />
         </Field>
 
         <div className="grid grid-cols-2 gap-3">
           <Field label="Type">
-            <select value={form.type} onChange={(e) => update("type", e.target.value)} className={inputCls}>
+            <select
+              value={form.type}
+              onChange={(e) => update("type", e.target.value)}
+              className={inputCls}
+            >
               <option value="pg">PG / Hostel</option>
               <option value="flat">Flat / Apartment</option>
             </select>
           </Field>
           <Field label="Gender">
-            <select value={form.gender} onChange={(e) => update("gender", e.target.value)} className={inputCls}>
+            <select
+              value={form.gender}
+              onChange={(e) => update("gender", e.target.value)}
+              className={inputCls}
+            >
               <option value="boys">Boys Only</option>
               <option value="girls">Girls Only</option>
               <option value="coed">Co-ed</option>
@@ -160,21 +310,70 @@ export default function OwnerListingForm() {
         </div>
 
         <Field label="Address">
-          <input type="text" value={form.address} onChange={(e) => update("address", e.target.value)} placeholder="Near Ideal Colony, Paud Road, Kothrud" className={inputCls} />
+          <input
+            type="text"
+            value={form.address}
+            onChange={(e) => update("address", e.target.value)}
+            placeholder="Near Ideal Colony, Paud Road, Kothrud"
+            className={inputCls}
+          />
         </Field>
 
         <div className="grid grid-cols-2 gap-3">
           <Field label="Distance from Campus">
-            <input type="text" value={form.distance} onChange={(e) => update("distance", e.target.value)} placeholder="450m from MIT-WPU" className={inputCls} />
+            <input
+              type="text"
+              value={form.distance}
+              onChange={(e) => update("distance", e.target.value)}
+              placeholder="450m from MIT-WPU"
+              className={inputCls}
+            />
           </Field>
           <Field label="Walk Time">
-            <input type="text" value={form.walk_time} onChange={(e) => update("walk_time", e.target.value)} placeholder="6 min walk" className={inputCls} />
+            <input
+              type="text"
+              value={form.walk_time}
+              onChange={(e) => update("walk_time", e.target.value)}
+              placeholder="6 min walk"
+              className={inputCls}
+            />
           </Field>
         </div>
 
         <Field label="Contact Phone">
-          <input type="tel" value={form.phone} onChange={(e) => update("phone", e.target.value)} placeholder="+91 98765 43210" className={inputCls} />
+          <input
+            type="tel"
+            value={form.phone}
+            onChange={(e) => update("phone", e.target.value)}
+            placeholder="+91 98765 43210"
+            className={inputCls}
+          />
         </Field>
+
+        <div className="grid grid-cols-2 gap-3">
+          <Field label="Map Pin X (0-100)">
+            <input
+              type="number"
+              min="0"
+              max="100"
+              value={form.pin_x}
+              onChange={(e) => update("pin_x", e.target.value)}
+              placeholder="Optional"
+              className={inputCls}
+            />
+          </Field>
+          <Field label="Map Pin Y (0-100)">
+            <input
+              type="number"
+              min="0"
+              max="100"
+              value={form.pin_y}
+              onChange={(e) => update("pin_y", e.target.value)}
+              placeholder="Optional"
+              className={inputCls}
+            />
+          </Field>
+        </div>
 
         <div className="flex items-center gap-3">
           <input
@@ -184,28 +383,53 @@ export default function OwnerListingForm() {
             onChange={(e) => update("instant", e.target.checked)}
             className="w-4 h-4 accent-primary-dark"
           />
-          <label htmlFor="instant" className="text-sm font-medium text-on-surface">Instant Confirmation available</label>
+          <label
+            htmlFor="instant"
+            className="text-sm font-medium text-on-surface"
+          >
+            Instant Confirmation available
+          </label>
         </div>
       </section>
 
       {/* Pricing */}
       <section className="bg-white rounded-2xl p-5 flex flex-col gap-4 shadow-sm">
-        <h2 className="font-display text-base font-bold text-on-surface">Pricing</h2>
+        <h2 className="font-display text-base font-bold text-on-surface">
+          Pricing
+        </h2>
 
         <div className="grid grid-cols-2 gap-3">
           <Field label="Starting Price (₹/month) *">
-            <input type="number" value={form.price_from} onChange={(e) => update("price_from", e.target.value)} placeholder="7500" className={inputCls} />
+            <input
+              type="number"
+              value={form.price_from}
+              onChange={(e) => update("price_from", e.target.value)}
+              placeholder="7500"
+              className={inputCls}
+            />
           </Field>
           <Field label="Deposit">
-            <input type="text" value={form.deposit} onChange={(e) => update("deposit", e.target.value)} placeholder="₹10,000 Refundable" className={inputCls} />
+            <input
+              type="text"
+              value={form.deposit}
+              onChange={(e) => update("deposit", e.target.value)}
+              placeholder="₹10,000 Refundable"
+              className={inputCls}
+            />
           </Field>
         </div>
 
         <div>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-semibold text-on-surface-muted">Room / Occupancy Tiers</span>
-            <button onClick={addTier} className="text-xs font-semibold text-secondary flex items-center gap-0.5">
-              <span className="material-symbols-outlined text-[14px]">add</span> Add tier
+            <span className="text-xs font-semibold text-on-surface-muted">
+              Room / Occupancy Tiers
+            </span>
+            <button
+              onClick={addTier}
+              className="text-xs font-semibold text-secondary flex items-center gap-0.5"
+            >
+              <span className="material-symbols-outlined text-[14px]">add</span>{" "}
+              Add tier
             </button>
           </div>
           <div className="flex flex-col gap-2">
@@ -225,8 +449,13 @@ export default function OwnerListingForm() {
                   placeholder="₹ Price"
                   className="w-28 h-11 px-3 rounded-xl bg-surface-low border border-surface-high text-sm focus:outline-none focus:ring-2 focus:ring-primary/30"
                 />
-                <button onClick={() => removeTier(i)} className="w-9 h-9 rounded-xl bg-red-50 text-red-500 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-[18px]">close</span>
+                <button
+                  onClick={() => removeTier(i)}
+                  className="w-9 h-9 rounded-xl bg-red-50 text-red-500 flex items-center justify-center"
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    close
+                  </span>
                 </button>
               </div>
             ))}
@@ -236,55 +465,86 @@ export default function OwnerListingForm() {
 
       {/* Amenities */}
       <section className="bg-white rounded-2xl p-5 flex flex-col gap-3 shadow-sm">
-        <h2 className="font-display text-base font-bold text-on-surface">Amenities</h2>
+        <h2 className="font-display text-base font-bold text-on-surface">
+          Amenities
+        </h2>
         <div className="flex flex-wrap gap-2">
           {AMENITY_OPTIONS.map((a) => {
-            const on = selectedAmenities.includes(a.label);
+            const on = selectedAmenities.includes(a.label)
+
             return (
               <button
                 key={a.label}
                 onClick={() => toggleAmenity(a.label)}
                 className={`flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold border transition-all ${
-                  on ? "border-primary bg-surface-low text-secondary" : "border-surface-high bg-white text-on-surface-muted"
+                  on
+                    ? "border-primary bg-surface-low text-secondary"
+                    : "border-surface-high bg-white text-on-surface-muted"
                 }`}
               >
-                <span className="material-symbols-outlined text-[15px]">{a.icon}</span>
+                <span className="material-symbols-outlined text-[15px]">
+                  {a.icon}
+                </span>
                 {a.label}
               </button>
-            );
+            )
           })}
         </div>
       </section>
 
       {/* Images */}
       <section className="bg-white rounded-2xl p-5 flex flex-col gap-3 shadow-sm">
-        <h2 className="font-display text-base font-bold text-on-surface">Images</h2>
-        <p className="text-xs text-on-surface-muted">Paste public image URLs (Unsplash, Google Drive, etc.)</p>
+        <h2 className="font-display text-base font-bold text-on-surface">
+          Images
+        </h2>
+        <p className="text-xs text-on-surface-muted">
+          Paste public image URLs (Unsplash, Google Drive, etc.)
+        </p>
         {imageUrls.map((url, i) => (
           <div key={i} className="flex gap-2 items-center">
             <input
               type="url"
               value={url}
               onChange={(e) => {
-                const next = [...imageUrls];
-                next[i] = e.target.value;
-                setImageUrls(next);
+                const next = [...imageUrls]
+
+                next[i] = e.target.value
+
+                setImageUrls(next)
               }}
               placeholder={`Image URL ${i + 1}`}
               className="flex-1 h-11 px-3 rounded-xl bg-surface-low border border-surface-high text-xs focus:outline-none focus:ring-2 focus:ring-primary/30"
             />
             {url && (
               <div className="w-11 h-11 rounded-xl overflow-hidden flex-shrink-0">
-                <img src={url} alt="" className="w-full h-full object-cover" onError={(e) => (e.currentTarget.style.display = "none")} />
+                <img
+                  src={url}
+                  alt=""
+                  className="w-full h-full object-cover"
+                  onError={(e) => (e.currentTarget.style.display = "none")}
+                />
               </div>
             )}
           </div>
         ))}
+        <button
+          type="button"
+          onClick={() => setImageUrls((prev) => [...prev, ""])}
+          className="self-start text-xs font-semibold text-secondary flex items-center gap-1"
+        >
+          <span className="material-symbols-outlined text-[15px]">add</span>
+          Add image
+        </button>
       </section>
 
       {/* Save */}
       <div className="flex gap-3 pb-4">
-        <button onClick={() => navigate(-1)} className="flex-1 h-12 rounded-xl border border-surface-high text-sm font-semibold text-on-surface-muted">Cancel</button>
+        <button
+          onClick={() => navigate(-1)}
+          className="flex-1 h-12 rounded-xl border border-surface-high text-sm font-semibold text-on-surface-muted"
+        >
+          Cancel
+        </button>
         <button
           onClick={handleSave}
           disabled={saving || !form.name || !form.price_from}
@@ -295,11 +555,13 @@ export default function OwnerListingForm() {
               <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
               Saving...
             </>
+          ) : isEdit ? (
+            "Save Changes"
           ) : (
-            isEdit ? "Save Changes" : "Submit Listing"
+            "Submit Listing"
           )}
         </button>
       </div>
     </div>
-  );
+  )
 }
