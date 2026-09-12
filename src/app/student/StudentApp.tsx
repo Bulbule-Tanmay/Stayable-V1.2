@@ -209,8 +209,14 @@ export default function StudentApp() {
     )
   }
 
+  const isMapView = activeTab === "explore" && exploreView === "map"
+
   return (
-    <div className="min-h-screen bg-surface flex flex-col max-w-lg mx-auto relative">
+    <div
+      className={`min-h-screen bg-surface flex flex-col relative mx-auto w-full ${
+        isMapView ? "max-w-none" : "max-w-lg"
+      }`}
+    >
       {!isDetail && (
         <Header campus={campuses[campusIndex]} onCampusChange={changeCampus} />
       )}
