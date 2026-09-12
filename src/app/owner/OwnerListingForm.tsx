@@ -30,7 +30,7 @@ const AMENITY_OPTIONS = [
 
 type Tier = { label: string; price: string };
 
-const CAMPUS_LOCATION = { lat: 18.5362, lng: 73.8297 }
+const CAMPUS_LOCATION = { lat: 18.5732358, lng: 73.9814749 }
 
 function LocationClickHandler({ onSelect }: { onSelect: (lat: number, lng: number) => void }) {
   useMapEvents({ click: (event) => onSelect(event.latlng.lat, event.latlng.lng) })
@@ -87,7 +87,7 @@ export default function OwnerListingForm() {
 
     address: "",
 
-    campus: "MIT-WPU Pune",
+    campus: "GH Raisoni Pune",
 
     distance: "",
 
@@ -136,7 +136,7 @@ export default function OwnerListingForm() {
 
           address: item.address ?? "",
 
-          campus: item.campus ?? "MIT-WPU Pune",
+          campus: item.campus ?? "GH Raisoni Pune",
 
           distance: item.distance ?? "",
 
@@ -194,7 +194,7 @@ export default function OwnerListingForm() {
     const distanceKm = distanceInKm(latitude, longitude)
     update("latitude", String(latitude))
     update("longitude", String(longitude))
-    update("distance", `${distanceKm < 1 ? `${Math.round(distanceKm * 1000)}m` : `${distanceKm.toFixed(1)} km`} from MIT-WPU`)
+    update("distance", `${distanceKm < 1 ? `${Math.round(distanceKm * 1000)}m` : `${distanceKm.toFixed(1)} km`} from GH Raisoni Pune`)
     update("walk_time", `${Math.max(1, Math.round(distanceKm * 12))} min walk`)
     try {
       update("address", await reverseGeocode(latitude, longitude))
@@ -401,7 +401,7 @@ export default function OwnerListingForm() {
               placeholder="Select a point on the map or enter an address"
               className={inputCls}
             />
-            {form.latitude && form.longitude && <p className="text-[11px] text-on-surface-muted">Location selected. Distance and walking time are calculated from MIT-WPU.</p>}
+            {form.latitude && form.longitude && <p className="text-[11px] text-on-surface-muted">Location selected. Distance and walking time are calculated from GH Raisoni Pune.</p>}
           </div>
         </Field>
 

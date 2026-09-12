@@ -274,7 +274,7 @@ export default function DetailPage({
             About This Property
           </h3>
           <p className="text-sm text-on-surface-muted leading-relaxed">
-            Located in the heart of Kothrud near MIT-WPU, this accommodation
+            Located near GH Raisoni Pune, this accommodation
             offers a safe, comfortable living experience for students. Fully
             furnished rooms with modern amenities, secure access, and a
             supportive community make it an ideal choice for your academic

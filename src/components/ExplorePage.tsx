@@ -49,7 +49,7 @@ export default function ExplorePage({
 
   loading = false,
 
-  campus = "MIT-WPU, Kothrud",
+  campus = "GH Raisoni Pune",
 
   onCampusChange,
 }: Props) {

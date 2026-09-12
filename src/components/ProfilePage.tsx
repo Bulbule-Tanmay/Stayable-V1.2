@@ -136,7 +136,7 @@ export default function ProfilePage({
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-1">
             <span className="font-display text-sm font-bold text-on-surface">
-              MIT-WPU, Kothrud
+              GH Raisoni Pune, Wagholi
             </span>
             <span
               className="material-symbols-outlined text-[15px] text-verified"

@@ -55,7 +55,7 @@ export default function StudentApp() {
 
   const { user, profile } = useAuth()
 
-  const campuses = ["MIT-WPU Pune", "Symbiosis Pune", "VIT Pune"]
+  const campuses = ["GH Raisoni Pune", "Symbiosis Pune", "VIT Pune"]
 
   const changeCampus = () =>
     setCampusIndex((index) => (index + 1) % campuses.length)

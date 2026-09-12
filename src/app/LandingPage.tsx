@@ -12,11 +12,11 @@ const WA_ICON = (
 );
 
 const TESTIMONIALS = [
-  { name: "Ananya Deshmukh", college: "MIT-WPU, B.Tech CSE 2nd Year", text: "Found my PG within 2 hours of downloading the app. No broker, direct WhatsApp to owner. Saved ₹15,000 in brokerage!", rating: 5, type: "student" },
-  { name: "Rohit Sharma", college: "MIT-WPU, MBA 1st Year", text: "The campus map feature is genius. Could see exactly which PGs were within 10 minutes walk from my department. Booked in one visit.", rating: 5, type: "student" },
+  { name: "Ananya Deshmukh", college: "GH Raisoni, B.Tech CSE 2nd Year", text: "Found my PG within 2 hours of downloading the app. No broker, direct WhatsApp to owner. Saved ₹15,000 in brokerage!", rating: 5, type: "student" },
+  { name: "Rohit Sharma", college: "GH Raisoni, MBA 1st Year", text: "The campus map feature is genius. Could see exactly which PGs were within 10 minutes walk from my department. Booked in one visit.", rating: 5, type: "student" },
   { name: "Priya Kulkarni", college: "Symbiosis, B.Com 3rd Year", text: "As a girl student, the Girls Only filter was so helpful. Found a safe, verified PG with CCTV and lady warden in my budget.", rating: 5, type: "student" },
   { name: "Rajesh Patil", college: "PG Owner, Kothrud Pune", text: "Got 12 genuine student enquiries in the first week itself. No brokerage fights, students come directly on WhatsApp. Best platform!", rating: 5, type: "owner" },
-  { name: "Sunita Sharma", college: "Flat Owner, Baner Road", text: "Listed my 2BHK for student co-living and found 3 verified MIT-WPU students in 4 days. The verification system builds trust.", rating: 5, type: "owner" },
+  { name: "Sunita Sharma", college: "Flat Owner, Wagholi", text: "Listed my 2BHK for student co-living and found 3 verified GH Raisoni students in 4 days. The verification system builds trust.", rating: 5, type: "owner" },
 ];
 
 const FAQS_STUDENT = [
@@ -70,7 +70,7 @@ export default function LandingPage() {
             {[
               { label: "For Students & Parents", href: "#students" },
               { label: "For Property Owners", href: "#owners" },
-              { label: "MIT-WPU Campus", href: "#campus" },
+              { label: "GH Raisoni Campus", href: "#campus" },
               { label: "How It Works", href: "#how" },
             ].map((item) => (
               <a
@@ -133,7 +133,7 @@ export default function LandingPage() {
             {[
               { label: "For Students & Parents", href: "#students" },
               { label: "For Property Owners", href: "#owners" },
-              { label: "MIT-WPU Campus", href: "#campus" },
+              { label: "GH Raisoni Campus", href: "#campus" },
               { label: "How It Works", href: "#how" },
             ].map((item) => (
               <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className="py-3 text-sm font-medium text-on-surface border-b border-surface-high last:border-0">
@@ -224,10 +224,10 @@ export default function LandingPage() {
               </div>
               <ul className="flex flex-col gap-3">
                 {[
-                  { icon: "near_me", text: "Pinned PG Locations with Exact Campus Safety Audit — Walk from MIT-WPU Main Gate" },
+                  { icon: "near_me", text: "Pinned PG Locations with Exact Campus Safety Audit — Walk from GH Raisoni Main Gate" },
                   { icon: "verified_user", text: "Student Profiles & Ratings by 200+ verified students. Owner responsiveness, room quality, food, and safety scores." },
                   { icon: "directions_walk", text: "Direct WhatsApp & Call Landlords — No Agencies. Save and compare 100–300 sqft accommodation options." },
-                  { icon: "map", text: "In-App Google Maps On-Campus Walk Calculator — Know exact walking time from MIT-WPU to any PG/flat before you visit." },
+                  { icon: "map", text: "In-App Google Maps On-Campus Walk Calculator — Know exact walking time from GH Raisoni Pune to any PG/flat before you visit." },
                   { icon: "discount", text: "30% discounts on PGs and ₹200–500 option discount coupons, saving you ₹1,500 more than the city average." },
                   { icon: "smartphone", text: "Want to Skip Using Apps? Download our Stayable One-Tap with a single tap on your phone to get the full experience." },
                 ].map((item, i) => (
@@ -287,11 +287,11 @@ export default function LandingPage() {
                 Near-Campus listings<br />from All-Connecting Both Worlds
               </h2>
               <p className="text-on-surface-muted mb-6 text-sm leading-relaxed">
-                Stayable builds properties specifically for MIT-WPU students, parents, and verified landlords within the campus walking zone — so your commute is always walking distance.
+                Stayable builds properties specifically for GH Raisoni students, parents, and verified landlords within the campus walking zone — so your commute is always walking distance.
               </p>
               <div className="flex flex-col gap-4 mb-8">
                 {[
-                  { icon: "near_me", label: "MIT-WPU Gate #2 — Paud Road, Kothrud", sub: "Walking Facility" },
+                  { icon: "near_me", label: "GH Raisoni Main Gate — Wagholi, Pune", sub: "Walking Facility" },
                   { icon: "directions_car", label: "Direct Landlord Links", sub: "No broker. No commission." },
                   { icon: "groups", label: "Campus Community", sub: "8 Student zones • 4 Daily Meals" },
                 ].map((item) => (
@@ -326,7 +326,7 @@ export default function LandingPage() {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-20 bg-primary/20 border-2 border-primary rounded-xl flex items-center justify-center">
                   <div className="text-center">
                     <span className="material-symbols-outlined text-[24px] text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
-                    <p className="text-[10px] font-bold text-primary">MIT-WPU</p>
+                    <p className="text-[10px] font-bold text-primary">GH Raisoni</p>
                   </div>
                 </div>
                 {/* Price pins */}
@@ -370,7 +370,7 @@ export default function LandingPage() {
             {[
               { num: "1", title: "Fast 30-sec Onboarding", desc: "Create your account and add your property details in under 30 seconds. No complicated forms.", icon: "rocket_launch" },
               { num: "2", title: "Zero Commission Guarantee", desc: "Your listings reach 100% of students in your campus zone. Keep every paisa you earn.", icon: "verified_user" },
-              { num: "3", title: "Physical Campus QR Rooms", desc: "We place Stayable QR stickers near MIT-WPU gates. Students scan → see your listing → contact you.", icon: "qr_code_2" },
+              { num: "3", title: "Physical Campus QR Rooms", desc: "We place Stayable QR stickers near GH Raisoni gates. Students scan → see your listing → contact you.", icon: "qr_code_2" },
               { num: "4", title: "A Verified Student Register", desc: "Students verify college ID. You know exactly who is enquiring, saving you time on unqualified leads.", icon: "how_to_reg" },
             ].map((step) => (
               <div key={step.num} className="bg-white rounded-2xl p-6 shadow-sm border border-surface-high/60 flex flex-col gap-3">
@@ -457,7 +457,7 @@ export default function LandingPage() {
               { label: "Owner / Manager Name", placeholder: "e.g. Rajesh Patil or Shri Jay Residency" },
               { label: "WhatsApp Number (For Student Leads)", placeholder: "+91 9876543210" },
               { label: "Property Name / Society", placeholder: "e.g. Sunrise Lucky Living or Shree Apts" },
-              { label: "Target College / Campus", placeholder: "MIT-WPU Pune / Paud Road / Kothrud" },
+              { label: "Target College / Campus", placeholder: "GH Raisoni Pune / Wagholi" },
             ].map((field) => (
               <div key={field.label}>
                 <label className="text-xs font-semibold text-white/50 mb-1.5 block">{field.label}</label>
@@ -515,7 +515,7 @@ export default function LandingPage() {
                 Scan Any Campus QR or Canteen, Skip the Search Bar
               </h2>
               <p className="text-on-surface-muted text-sm mb-6 leading-relaxed">
-                Stayable QR codes are placed at MIT-WPU Campus Gates and Symbiosis, Pimpri-Chinchwad entrances. Students instantly launch verified listings directly on their phone — zero brokerage, zero download required for the first contact.
+                Stayable QR codes are placed at GH Raisoni Campus Gates and Symbiosis, Pimpri-Chinchwad entrances. Students instantly launch verified listings directly on their phone — zero brokerage, zero download required for the first contact.
               </p>
               <div className="flex flex-col gap-3 mb-7">
                 {[
@@ -558,7 +558,7 @@ export default function LandingPage() {
                       <rect key={i} x={x} y={65 + i * 7} width="5" height="5" rx="0.5" fill="#0F172A" />
                     ))}
                   </svg>
-                  <p className="text-[11px] font-bold text-on-surface-muted text-center">Scan to see MIT-WPU<br />Campus Listings</p>
+                  <p className="text-[11px] font-bold text-on-surface-muted text-center">Scan to see GH Raisoni<br />Campus Listings</p>
                 </div>
                 <div className="absolute -top-3 -right-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md">
                   LIVE
@@ -705,7 +705,7 @@ export default function LandingPage() {
           </div>
           <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/25">
             <p>© 2025 Stayable Technologies Pvt. Ltd. All rights reserved. Zero-Brokerage Guaranteed.</p>
-            <p>MIT-WPU Pune Campus Hostels</p>
+            <p>GH Raisoni Pune Campus Hostels</p>
           </div>
         </div>
       </footer>

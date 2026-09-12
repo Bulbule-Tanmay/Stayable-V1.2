@@ -76,7 +76,7 @@ export default function MapPage({
             <div className="flex flex-col min-w-0">
               <div className="flex items-center gap-1.5">
                 <span className="font-display text-sm font-bold text-on-surface truncate">
-                  MIT-WPU Campus
+                  GH Raisoni Pune Campus
                 </span>
                 <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-secondary text-white shrink-0">
                   Center
@@ -141,7 +141,7 @@ export default function MapPage({
             letterSpacing="1"
             opacity="0.85"
           >
-            MIT-WPU ZONE
+            GH RAISONI ZONE
           </text>
           {/* Roads */}
           <path
@@ -218,7 +218,7 @@ export default function MapPage({
             >
               verified
             </span>
-            MIT-WPU Main Gate
+            GH Raisoni Main Gate
           </div>
           <div className="w-2.5 h-2.5 bg-secondary rotate-45 -mt-1 rounded-sm" />
         </div>
