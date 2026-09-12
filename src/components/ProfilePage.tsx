@@ -199,7 +199,7 @@ export default function ProfilePage({
               else if (item.action)
                 setNotice(`${item.label} settings will be available soon.`)
             }}
-            className={`w-full flex items-center gap-3 px-4 py-4 text-left outline-none focus:outline-none active:bg-surface-low transition-colors ${
+            className={`w-full flex min-w-0 items-center gap-3 px-4 py-3.5 text-left outline-none focus:outline-none active:bg-surface-low transition-colors ${
               item.danger ? "opacity-80" : ""
             }`}
           >
@@ -208,23 +208,38 @@ export default function ProfilePage({
                 item.danger ? "bg-red-50" : "bg-surface-low"
               }`}
             >
-              <span
-                className={`material-symbols-outlined text-[20px] ${
-                  item.danger ? "text-red-500" : "text-secondary"
-                }`}
-              >
-                {item.icon}
-              </span>
+              {item.icon === "info_outline" ? (
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5 text-secondary"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 11v5" strokeLinecap="round" />
+                  <circle cx="12" cy="7.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              ) : (
+                <span
+                  className={`material-symbols-outlined text-[20px] ${
+                    item.danger ? "text-red-500" : "text-secondary"
+                  }`}
+                >
+                  {item.icon}
+                </span>
+              )}
             </div>
-            <div className="flex-1 min-w-0">
+            <div className="min-w-0 flex-1 overflow-hidden">
               <p
-                className={`text-sm font-semibold ${
+                className={`truncate text-sm leading-5 font-semibold ${
                   item.danger ? "text-red-500" : "text-on-surface"
                 }`}
               >
                 {item.label}
               </p>
-              <p className="text-xs text-on-surface-muted truncate">
+              <p className="mt-0.5 truncate text-xs leading-4 text-on-surface-muted">
                 {item.danger ? `Signed in as ${displayName}` : item.sub}
               </p>
             </div>
