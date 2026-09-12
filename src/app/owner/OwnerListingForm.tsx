@@ -3,6 +3,8 @@ import { useState, useEffect } from "react"
 import { useNavigate, useParams } from "react-router"
 
 import { createListing, updateListing, getOwnerListings } from "../../lib/api"
+import { CircleMarker, MapContainer, TileLayer, useMap, useMapEvents } from "react-leaflet"
+import "leaflet/dist/leaflet.css"
 
 const AMENITY_OPTIONS = [
   { icon: "restaurant", label: "Food Included" },
@@ -27,6 +29,41 @@ const AMENITY_OPTIONS = [
 ]
 
 type Tier = { label: string; price: string };
+
+const CAMPUS_LOCATION = { lat: 18.5362, lng: 73.8297 }
+
+function LocationClickHandler({ onSelect }: { onSelect: (lat: number, lng: number) => void }) {
+  useMapEvents({ click: (event) => onSelect(event.latlng.lat, event.latlng.lng) })
+  return null
+}
+
+function MapCenter({ latitude, longitude }: { latitude: string; longitude: string }) {
+  const map = useMap()
+
+  useEffect(() => {
+    if (latitude && longitude) map.setView([Number(latitude), Number(longitude)])
+  }, [latitude, longitude, map])
+
+  return null
+}
+
+function distanceInKm(lat: number, lng: number) {
+  const earthRadius = 6371
+  const latDelta = ((lat - CAMPUS_LOCATION.lat) * Math.PI) / 180
+  const lngDelta = ((lng - CAMPUS_LOCATION.lng) * Math.PI) / 180
+  const a = Math.sin(latDelta / 2) ** 2
+    + Math.cos((CAMPUS_LOCATION.lat * Math.PI) / 180)
+      * Math.cos((lat * Math.PI) / 180)
+      * Math.sin(lngDelta / 2) ** 2
+  return earthRadius * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+}
+
+async function reverseGeocode(lat: number, lng: number) {
+  const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`)
+  if (!response.ok) throw new Error("Address lookup failed")
+  const result = await response.json()
+  return result.display_name as string
+}
 
 export default function OwnerListingForm() {
   const navigate = useNavigate()
@@ -69,6 +106,8 @@ export default function OwnerListingForm() {
     pin_x: "",
 
     pin_y: "",
+    latitude: "",
+    longitude: "",
   })
 
   const [tiers, setTiers] = useState<Tier[]>([{ label: "Double", price: "" }])
@@ -116,6 +155,10 @@ export default function OwnerListingForm() {
           pin_x: item.pin_x == null ? "" : String(item.pin_x),
 
           pin_y: item.pin_y == null ? "" : String(item.pin_y),
+
+          latitude: item.latitude == null ? "" : String(item.latitude),
+
+          longitude: item.longitude == null ? "" : String(item.longitude),
         })
 
         setTiers(
@@ -147,6 +190,30 @@ export default function OwnerListingForm() {
   const updateTier = (i: number, k: keyof Tier, v: string) =>
     setTiers((prev) => prev.map((t, idx) => (idx === i ? { ...t, [k]: v } : t)))
 
+  const setLocation = async (latitude: number, longitude: number) => {
+    const distanceKm = distanceInKm(latitude, longitude)
+    update("latitude", String(latitude))
+    update("longitude", String(longitude))
+    update("distance", `${distanceKm < 1 ? `${Math.round(distanceKm * 1000)}m` : `${distanceKm.toFixed(1)} km`} from MIT-WPU`)
+    update("walk_time", `${Math.max(1, Math.round(distanceKm * 12))} min walk`)
+    try {
+      update("address", await reverseGeocode(latitude, longitude))
+    } catch {
+      setError("Location selected, but the address could not be looked up. Please enter the address manually.")
+    }
+  }
+
+  const useCurrentLocation = () => {
+    if (!navigator.geolocation) {
+      setError("Location services are not available in this browser.")
+      return
+    }
+    navigator.geolocation.getCurrentPosition(
+      ({ coords }) => void setLocation(coords.latitude, coords.longitude),
+      () => setError("Unable to access your location. Please allow location access or select a point on the map."),
+    )
+  }
+
   const handleSave = async () => {
     if (
       !form.name.trim() ||
@@ -169,6 +236,10 @@ export default function OwnerListingForm() {
       pin_x: form.pin_x === "" ? null : Number(form.pin_x),
 
       pin_y: form.pin_y === "" ? null : Number(form.pin_y),
+
+      latitude: form.latitude === "" ? null : Number(form.latitude),
+
+      longitude: form.longitude === "" ? null : Number(form.longitude),
 
       gender_label:
         form.gender === "boys"
@@ -309,34 +380,37 @@ export default function OwnerListingForm() {
           </Field>
         </div>
 
-        <Field label="Address">
-          <input
-            type="text"
-            value={form.address}
-            onChange={(e) => update("address", e.target.value)}
-            placeholder="Near Ideal Colony, Paud Road, Kothrud"
-            className={inputCls}
-          />
+        <Field label="Property location *">
+          <div className="flex flex-col gap-3">
+            <div className="h-56 overflow-hidden rounded-xl border border-surface-high">
+              <MapContainer center={[Number(form.latitude) || CAMPUS_LOCATION.lat, Number(form.longitude) || CAMPUS_LOCATION.lng]} zoom={14} className="h-full w-full">
+                <TileLayer attribution='&copy; OpenStreetMap contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                <MapCenter latitude={form.latitude} longitude={form.longitude} />
+                <LocationClickHandler onSelect={(lat, lng) => void setLocation(lat, lng)} />
+                {form.latitude && form.longitude && <CircleMarker center={[Number(form.latitude), Number(form.longitude)]} radius={9} pathOptions={{ color: "#2563eb", fillColor: "#2563eb", fillOpacity: 0.8 }} />}
+              </MapContainer>
+            </div>
+            <button type="button" onClick={useCurrentLocation} className="self-start rounded-xl bg-surface-low px-3 py-2 text-xs font-semibold text-secondary">
+              <span className="material-symbols-outlined mr-1 align-middle text-[15px]">my_location</span>
+              Use current location
+            </button>
+            <input
+              type="text"
+              value={form.address}
+              onChange={(e) => update("address", e.target.value)}
+              placeholder="Select a point on the map or enter an address"
+              className={inputCls}
+            />
+            {form.latitude && form.longitude && <p className="text-[11px] text-on-surface-muted">Location selected. Distance and walking time are calculated from MIT-WPU.</p>}
+          </div>
         </Field>
 
         <div className="grid grid-cols-2 gap-3">
           <Field label="Distance from Campus">
-            <input
-              type="text"
-              value={form.distance}
-              onChange={(e) => update("distance", e.target.value)}
-              placeholder="450m from MIT-WPU"
-              className={inputCls}
-            />
+            <input type="text" value={form.distance} readOnly placeholder="Select a map location" className={`${inputCls} bg-surface-low`} />
           </Field>
           <Field label="Walk Time">
-            <input
-              type="text"
-              value={form.walk_time}
-              onChange={(e) => update("walk_time", e.target.value)}
-              placeholder="6 min walk"
-              className={inputCls}
-            />
+            <input type="text" value={form.walk_time} readOnly placeholder="Select a map location" className={`${inputCls} bg-surface-low`} />
           </Field>
         </div>
 

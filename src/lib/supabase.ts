@@ -85,6 +85,10 @@ export type Listing = {
 
   pin_y: number | null
 
+  latitude: number | null
+
+  longitude: number | null
+
   created_at: string
 
   profiles?: Profile
