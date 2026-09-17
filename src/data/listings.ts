@@ -26,6 +26,8 @@ export type Listing = {
   pinX: number;
   pinY: number;
   highlights: string[];
+  latitude: null | number;
+  longitude: null | number;
 };
 
 export const listings: Listing[] = [
@@ -69,6 +71,8 @@ export const listings: Listing[] = [
     address: "Near Ideal Colony, Paud Road, Kothrud",
     pinX: 32,
     pinY: 65,
+    latitude: null,
+    longitude: null,
     highlights: ["Warden on-site", "RO Water", "Power Backup", "Parking Available"],
   },
   {
@@ -109,6 +113,8 @@ export const listings: Listing[] = [
     address: "Rambaug Colony, Kothrud, Pune",
     pinX: 66,
     pinY: 27,
+    latitude: null,
+    longitude: null,
     highlights: ["24/7 Female Warden", "Gated Community", "North & South Food", "Study Room"],
   },
   {
@@ -149,6 +155,8 @@ export const listings: Listing[] = [
     address: "Paud Road Extension, Kothrud",
     pinX: 77,
     pinY: 56,
+    latitude: null,
+    longitude: null,
     highlights: ["Rooftop Terrace", "Community Events", "Netflix Lounge", "Smart Door Locks"],
   },
   {
@@ -186,6 +194,8 @@ export const listings: Listing[] = [
     address: "Vitthal Nagar, Kothrud, Pune",
     pinX: 16,
     pinY: 40,
+    latitude: null,
+    longitude: null,
     highlights: ["Nearest to Campus", "Strict Curfew Policy", "Monthly Rent", "Mess Optional"],
   },
   {
@@ -225,6 +235,8 @@ export const listings: Listing[] = [
     address: "Paud Road, Near Chandani Chowk, Pune",
     pinX: 61,
     pinY: 79,
+    latitude: null,
+    longitude: null,
     highlights: ["Fully Furnished", "Society Amenities", "Water 24x7", "No Brokerage"],
   },
   {
@@ -262,6 +274,8 @@ export const listings: Listing[] = [
     address: "Karve Nagar, Pune 411052",
     pinX: 84,
     pinY: 42,
+    latitude: null,
+    longitude: null,
     highlights: ["Premium Society", "Pets Allowed", "Video Doorbell", "EV Charging"],
   },
 ];

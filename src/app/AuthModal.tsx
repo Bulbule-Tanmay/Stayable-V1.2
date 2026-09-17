@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 import StayableLogo from "../components/StayableLogo"
 
@@ -40,9 +40,14 @@ export default function AuthModal({ onClose, defaultMode = "student" }: Props) {
 
   const [error, setError] = useState("")
 
+  const [signupNotice, setSignupNotice] = useState(false)
+
+  const onCloseRef = useRef(onClose)
+  onCloseRef.current = onClose
+
   useEffect(() => {
-    if (user) onClose()
-  }, [user, onClose])
+    if (user && !signupNotice) onCloseRef.current()
+  }, [user, signupNotice])
 
   const handleStudentSubmit = async () => {
     if (!email || !password) return
@@ -54,6 +59,10 @@ export default function AuthModal({ onClose, defaultMode = "student" }: Props) {
     try {
       if (isNewStudent) {
         await signUpStudent(email, password)
+        setSignupNotice(true)
+        setError("")
+        setLoading(false)
+        return
       } else {
         await signInWithEmail(email, password)
       }
@@ -191,6 +200,12 @@ export default function AuthModal({ onClose, defaultMode = "student" }: Props) {
           </div>
         )}
 
+        {signupNotice && (
+          <div className="mb-4 p-3 rounded-xl bg-green-50 border border-green-200 text-xs font-semibold text-green-700">
+            Check your email to verify your account.{" "}
+            <button onClick={onClose} className="underline">Close</button>
+          </div>
+        )}
         {error && (
           <div className="mb-4 p-3 rounded-xl bg-red-50 border border-red-200 text-xs font-semibold text-red-700">
             {error}
@@ -223,6 +238,7 @@ export default function AuthModal({ onClose, defaultMode = "student" }: Props) {
                   onChange={(e) => setPassword(e.target.value)}
                   onKeyDown={(e) => e.key === "Enter" && handleStudentSubmit()}
                   placeholder="Password"
+                  minLength={8}
                   className="w-full h-12 px-4 rounded-xl bg-surface-low border border-surface-high text-sm focus:outline-none focus:ring-2 focus:ring-primary/30"
                 />
               </div>

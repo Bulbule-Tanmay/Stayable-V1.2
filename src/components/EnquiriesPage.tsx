@@ -193,7 +193,7 @@ export default function EnquiriesPage({
               {/* Actions */}
               <div className="grid grid-cols-12 gap-2 px-4 pb-4">
                 <a
-                  href={`https://wa.me/${enq.phone.replace("+", "")}?text=${enq.waMessage}`}
+                  href={`https://wa.me/${(enq.phone ?? "").replace("+", "")}?text=${enq.waMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="col-span-5 h-10 rounded-full bg-whatsapp text-white flex items-center justify-center gap-1.5 text-xs font-semibold"

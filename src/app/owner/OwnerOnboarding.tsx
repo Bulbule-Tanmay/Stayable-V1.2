@@ -171,7 +171,7 @@ export default function OwnerOnboarding() {
             </div>
             <button
               onClick={() => setStep(2)}
-              disabled={!form.full_name || !form.phone}
+              disabled={!form.full_name.trim() || !form.phone.trim()}
               className="w-full h-12 rounded-xl bg-primary-dark text-white font-bold text-sm mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Continue

@@ -1,219 +1,212 @@
-import { useState, useEffect } from "react"
-
-import { useNavigate } from "react-router"
-
-import { getOwnerListings, deleteListing, updateListing } from "../../lib/api"
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router";
+import { getOwnerListings, updateListing } from "../../lib/api";
+const DEMO_PGS = [
+  {
+    id: "sunrise-pg",
+    name: "Sunrise PG",
+    address: "Lane 4, Kothrud, Pune",
+    rating: 4.5,
+    reviewCount: 32,
+    rooms_free: 6,
+    is_active: true,
+    amenities: ["WiFi", "Food", "AC", "Laundry", "CCTV"],
+    price_from: 6500,
+    rooms: [
+      { label: "Single Room", price: 10000, avail: 2 },
+      { label: "Double Sharing", price: 7500, avail: 4 },
+      { label: "Triple Sharing", price: 6500, avail: 0 },
+    ],
+    photos: [],
+  },
+  {
+    id: "campus-view-pg",
+    name: "Campus View PG",
+    address: "Kothrud, Pune",
+    rating: 4.2,
+    reviewCount: 18,
+    rooms_free: 4,
+    is_active: true,
+    amenities: ["WiFi", "AC", "CCTV"],
+    price_from: 7000,
+    rooms: [
+      { label: "Single Room", price: 11000, avail: 1 },
+      { label: "Double Sharing", price: 8000, avail: 3 },
+      { label: "Triple Sharing", price: 7000, avail: 0 },
+    ],
+    photos: [],
+  },
+];
 
 export default function OwnerListings() {
-  const navigate = useNavigate()
-
-  const [items, setItems] = useState<any[]>([])
-
-  const [loading, setLoading] = useState(true)
-
-  const [deleting, setDeleting] = useState<string | null>(null)
-
-  const [error, setError] = useState("")
-
-  const load = () => {
-    setLoading(true)
-    setError("")
-
-    return getOwnerListings()
-      .then(setItems)
-      .catch((e: unknown) => {
-        setItems([])
-        setError(
-          e instanceof Error
-            ? e.message
-            : "Unable to load your listings. Please try again.",
-        )
-      })
-      .finally(() => setLoading(false))
-  }
+  const navigate = useNavigate();
+  const [items, setItems] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   useEffect(() => {
-    load()
-  }, [])
+    getOwnerListings()
+      .then((data) => setItems(data && data.length > 0 ? data : DEMO_PGS))
+      .catch(() => setItems(DEMO_PGS))
+      .finally(() => setLoading(false));
+  }, []);
 
-  const handleDelete = async (id: string) => {
-    if (!confirm("Delete this listing? This cannot be undone.")) return
+  const pgs = items.length > 0 ? items : DEMO_PGS;
+  const selected = pgs[selectedTab] ?? DEMO_PGS[0];
+  const rooms = selected.rooms ?? DEMO_PGS[0].rooms;
+  const photos = selected.photos ?? [];
 
-    setDeleting(id)
-
-    try {
-      await deleteListing(id)
-      setItems((prev) => prev.filter((l) => l.id !== id))
-    } catch (e: unknown) {
-      setError(
-        e instanceof Error ? e.message : "Unable to delete listing.",
-      )
-    } finally {
-      setDeleting(null)
-    }
-  }
-
-  const handleToggle = async (l: any) => {
-    setError("")
-
-    try {
-      const updated = await updateListing(l.id, { is_active: !l.is_active })
-
-      setItems((prev) => prev.map((x) => (x.id === l.id ? updated : x)))
-    } catch (e: any) {
-      setError(e.message ?? "Unable to update listing.")
-    }
-  }
+  const adjustRoom = (label: string, delta: number) => {
+    setItems((prev) => {
+      const updated = prev.map((pg) => {
+        if (pg.id !== selected.id) return pg;
+        return {
+          ...pg,
+          rooms: (pg.rooms ?? rooms).map((r: any) =>
+            r.label === label ? { ...r, avail: Math.max(0, r.avail + delta) } : r
+          ),
+        };
+      });
+      const updatedPg = updated.find((pg) => pg.id === selected.id);
+      if (updatedPg && !String(updatedPg.id).startsWith("sunrise") && !String(updatedPg.id).startsWith("campus")) {
+        updateListing(updatedPg.id, { rooms: updatedPg.rooms }).catch(() => {});
+      }
+      return updated;
+    });
+  };
 
   return (
-    <div className="py-6 flex flex-col gap-5">
+    <div className="flex flex-col gap-6 max-w-4xl">
+      {/* Header */}
       <div className="flex items-center justify-between">
-        <div>
-          <h1 className="font-display text-2xl font-extrabold text-on-surface">
-            My Listings
-          </h1>
-          <p className="text-sm text-on-surface-muted">
-            {items.length} properties
-          </p>
-        </div>
-        {error && (
-          <div className="rounded-xl border border-red-200 bg-red-50 p-3 text-xs font-semibold text-red-700">
-            {error}
-          </div>
-        )}
+        <h1 className="font-display text-2xl font-extrabold text-on-surface">My PGs</h1>
         <button
           onClick={() => navigate("/owner/listings/new")}
-          className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-primary-dark text-white text-sm font-bold shadow-sm"
+          className="px-4 py-2 bg-primary text-white text-sm font-bold rounded-xl flex items-center gap-1.5"
         >
           <span className="material-symbols-outlined text-[18px]">add</span>
-          New Listing
+          + Add PG
         </button>
       </div>
 
+      {/* PG Tabs */}
+      <div className="flex gap-2">
+        {pgs.map((pg, i) => (
+          <button
+            key={pg.id}
+            onClick={() => setSelectedTab(i)}
+            className={`px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${selectedTab === i ? "bg-primary text-white border-primary" : "border-gray-200 text-gray-600 bg-white"}`}
+          >
+            {pg.name}
+          </button>
+        ))}
+      </div>
+
       {loading ? (
-        <div className="flex flex-col gap-3">
-          {[1, 2].map((i) => (
-            <div
-              key={i}
-              className="h-28 rounded-2xl bg-surface-high animate-pulse"
-            />
-          ))}
-        </div>
-      ) : items.length === 0 ? (
-        <button
-          onClick={() => navigate("/owner/listings/new")}
-          className="border-2 border-dashed border-surface-high rounded-2xl p-10 text-center flex flex-col items-center gap-3 hover:border-primary/30"
-        >
-          <span className="material-symbols-outlined text-[48px] text-on-surface-muted">
-            add_home
-          </span>
-          <p className="font-display text-base font-bold text-on-surface-muted">
-            Add your first property
-          </p>
-          <p className="text-sm text-on-surface-muted">
-            PGs, hostels, and flats welcome
-          </p>
-        </button>
+        <div className="h-64 bg-gray-100 rounded-2xl animate-pulse" />
       ) : (
-        <div className="flex flex-col gap-3">
-          {items.map((l) => (
-            <div
-              key={l.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm"
-            >
-              <div className="flex gap-3 p-4">
-                {/* Thumbnail */}
-                <div className="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 bg-surface-mid">
-                  {(l.images ?? [])[0] && (
-                    <img
-                      src={l.images[0]}
-                      alt={l.name}
-                      className="w-full h-full object-cover"
-                    />
-                  )}
-                </div>
-
-                {/* Info */}
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-start justify-between gap-2">
-                    <div className="min-w-0">
-                      <h3 className="font-display text-sm font-bold text-on-surface truncate">
-                        {l.name}
-                      </h3>
-                      <p className="text-xs text-on-surface-muted mt-0.5 truncate">
-                        {l.address ?? l.campus}
-                      </p>
-                    </div>
-                    <div className="flex flex-col items-end gap-1 shrink-0">
-                      <span
-                        className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                          l.is_approved
-                            ? "bg-emerald-100 text-emerald-700"
-                            : "bg-amber-100 text-amber-700"
-                        }`}
-                      >
-                        {l.is_approved ? "Approved" : "Pending Review"}
-                      </span>
-                      <span
-                        className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                          l.is_active
-                            ? "bg-blue-100 text-blue-700"
-                            : "bg-surface-high text-on-surface-muted"
-                        }`}
-                      >
-                        {l.is_active ? "Active" : "Paused"}
-                      </span>
-                    </div>
+        <>
+          {/* Main panel: PG card + Manage Rooms */}
+          <div className="grid grid-cols-2 gap-4">
+            {/* PG card */}
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+              <div className="h-48 bg-surface-mid overflow-hidden">
+                {photos[0] ? (
+                  <img src={typeof photos[0] === "string" ? photos[0] : photos[0]} alt={selected.name} className="w-full h-full object-cover" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-gray-300">
+                    <span className="material-symbols-outlined text-[48px]">image</span>
                   </div>
-                  <p className="font-display text-base font-extrabold text-primary-dark mt-1">
-                    ₹
-                    {(l.priceFrom ?? l.price_from ?? 0).toLocaleString("en-IN")}
-                    <span className="font-normal text-xs text-on-surface-muted">
-                      /month
-                    </span>
-                  </p>
-                </div>
+                )}
               </div>
-
-              {/* Action bar */}
-              <div className="flex items-center gap-2 px-4 pb-4">
-                <button
-                  onClick={() => navigate(`/owner/listings/${l.id}/edit`)}
-                  className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-low text-on-surface text-xs font-semibold"
-                >
-                  <span className="material-symbols-outlined text-[16px]">
-                    edit
+              <div className="p-4">
+                <div className="flex items-start justify-between mb-1">
+                  <h2 className="font-display text-base font-bold text-on-surface">{selected.name}</h2>
+                  <span className="flex items-center gap-0.5 text-[11px] font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full border border-green-200">
+                    <span className="material-symbols-outlined text-[12px]">verified</span> Verified
                   </span>
-                  Edit
-                </button>
-                <button
-                  onClick={() => handleToggle(l)}
-                  className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold ${
-                    l.is_active
-                      ? "bg-amber-50 text-amber-700"
-                      : "bg-emerald-50 text-emerald-700"
-                  }`}
-                >
-                  <span className="material-symbols-outlined text-[16px]">
-                    {l.is_active ? "pause" : "play_arrow"}
-                  </span>
-                  {l.is_active ? "Pause" : "Activate"}
-                </button>
-                <button
-                  onClick={() => handleDelete(l.id)}
-                  disabled={deleting === l.id}
-                  className="ml-auto flex items-center gap-1.5 px-3 py-2 rounded-xl bg-red-50 text-red-600 text-xs font-semibold disabled:opacity-50"
-                >
-                  <span className="material-symbols-outlined text-[16px]">
-                    delete
-                  </span>
-                  {deleting === l.id ? "..." : "Delete"}
-                </button>
+                </div>
+                <div className="flex items-center gap-1 text-xs text-gray-500 mb-1">
+                  <span className="material-symbols-outlined text-[13px]">location_on</span>
+                  {selected.address}
+                </div>
+                <div className="flex items-center gap-2 text-xs text-gray-500 mb-3">
+                  <span className="text-amber-400">★</span>
+                  <span className="font-semibold text-on-surface">{selected.rating}</span>
+                  <span>({selected.reviewCount} reviews)</span>
+                  <span>·</span>
+                  <span>{selected.rooms_free ?? 6} rooms free</span>
+                </div>
+                <div className="flex flex-wrap gap-1.5 mb-4">
+                  {(selected.amenities ?? []).map((a: string) => (
+                    <span key={a} className="text-[11px] px-2.5 py-1 bg-surface-low text-primary rounded-full font-medium">{a}</span>
+                  ))}
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <button onClick={() => navigate(`/owner/listings/${selected.id}/edit`)} className="py-2 border border-gray-200 rounded-xl text-xs font-semibold text-gray-600">Edit Rent</button>
+                  <button onClick={() => alert("Photo upload coming soon!")} className="py-2 border border-gray-200 rounded-xl text-xs font-semibold text-gray-600">Upload Photos</button>
+                </div>
               </div>
             </div>
-          ))}
-        </div>
+
+            {/* Manage Rooms */}
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+              <h2 className="font-display text-base font-bold text-on-surface mb-4">Manage Rooms</h2>
+              <div className="flex flex-col divide-y divide-gray-100">
+                {rooms.map((r: any) => (
+                  <div key={r.label} className="py-3">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-sm font-semibold text-on-surface">{r.label}</span>
+                      <span className="font-display text-sm font-extrabold text-primary">₹{Number(r.price).toLocaleString("en-IN")}</span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className={`text-xs font-medium ${r.avail > 0 ? "text-green-500" : "text-red-400"}`}>
+                        {r.avail} available
+                      </span>
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => adjustRoom(r.label, 1)}
+                          className="w-6 h-6 rounded-full bg-green-100 text-green-600 text-sm font-bold flex items-center justify-center"
+                        >
+                          +1
+                        </button>
+                        <button
+                          onClick={() => adjustRoom(r.label, -1)}
+                          className="w-6 h-6 rounded-full bg-red-100 text-red-500 text-sm font-bold flex items-center justify-center"
+                        >
+                          -1
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Photos section */}
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="font-display text-base font-bold text-on-surface">Photos</h2>
+              <button className="text-sm font-semibold text-primary">+ Add Photos</button>
+            </div>
+            {photos.length > 0 ? (
+              <div className="grid grid-cols-4 gap-2">
+                {photos.slice(0, 6).map((photo: any, i: number) => (
+                  <div key={i} className={`rounded-xl overflow-hidden ${i < 4 ? "aspect-square" : "aspect-video col-span-1"}`}>
+                    <img src={typeof photo === "string" ? photo : photo} alt="" className="w-full h-full object-cover" />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="border-2 border-dashed border-gray-200 rounded-xl h-32 flex flex-col items-center justify-center text-gray-400 gap-2">
+                <span className="material-symbols-outlined text-[32px]">add_photo_alternate</span>
+                <span className="text-sm">Add photos</span>
+              </div>
+            )}
+          </div>
+        </>
       )}
     </div>
-  )
+  );
 }

@@ -4,8 +4,6 @@ import { useNavigate, useParams } from "react-router"
 
 import { createListing, updateListing, getOwnerListings } from "../../lib/api"
 import { CircleMarker, MapContainer, TileLayer, useMap, useMapEvents } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
-
 const AMENITY_OPTIONS = [
   { icon: "restaurant", label: "Food Included" },
 
@@ -240,9 +238,11 @@ export default function OwnerListingForm() {
       !form.name.trim() ||
       !form.price_from ||
       !form.address.trim() ||
-      !form.phone.trim()
+      !form.phone.trim() ||
+      !form.latitude ||
+      !form.longitude
     ) {
-      setError("Name, address, phone, and starting price are required.")
+      setError("Name, address, phone, starting price, and map location are required.")
 
       return
     }
@@ -428,32 +428,10 @@ export default function OwnerListingForm() {
             placeholder="+91 98765 43210"
             className={inputCls}
           />
+          {form.phone && !/^\+?[\d\s-]{7,15}$/.test(form.phone) && (
+            <p className="text-xs text-red-600 mt-1">Enter a valid phone number</p>
+          )}
         </Field>
-
-        <div className="grid grid-cols-2 gap-3">
-          <Field label="Map Pin X (0-100)">
-            <input
-              type="number"
-              min="0"
-              max="100"
-              value={form.pin_x}
-              onChange={(e) => update("pin_x", e.target.value)}
-              placeholder="Optional"
-              className={inputCls}
-            />
-          </Field>
-          <Field label="Map Pin Y (0-100)">
-            <input
-              type="number"
-              min="0"
-              max="100"
-              value={form.pin_y}
-              onChange={(e) => update("pin_y", e.target.value)}
-              placeholder="Optional"
-              className={inputCls}
-            />
-          </Field>
-        </div>
 
         <div className="flex items-center gap-3">
           <input

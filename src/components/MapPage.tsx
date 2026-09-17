@@ -1,19 +1,19 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import { Circle, CircleMarker, MapContainer, TileLayer, Tooltip, useMap } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
 
-type Props = { savedIds: Set<string>; onSaveToggle: (id: string) => void; onViewDetails: (id: string) => void; onListView: () => void; listings: any[] }
+type CampusProp = { name: string; lat: number; lng: number };
+type Props = { savedIds: Set<string>; onSaveToggle: (id: string) => void; onViewDetails: (id: string) => void; onListView: () => void; listings: any[]; campus?: CampusProp }
 
-const CAMPUS = { name: "GH Raisoni Pune Campus", lat: 18.5732358, lng: 73.9814749 }
+const DEFAULT_CAMPUS = { name: "GH Raisoni Pune Campus", lat: 18.5732358, lng: 73.9814749 }
 const pointFor = (listing: any) => {
   const lat = Number(listing.latitude)
   const lng = Number(listing.longitude)
   return listing.latitude !== null && listing.latitude !== "" && listing.longitude !== null && listing.longitude !== "" && Number.isFinite(lat) && Number.isFinite(lng) ? { lat, lng } : null
 }
-const distanceInKm = (lat: number, lng: number) => {
+const distanceInKm = (lat: number, lng: number, campus: CampusProp) => {
   const radians = (value: number) => (value * Math.PI) / 180
-  const dLat = radians(lat - CAMPUS.lat), dLng = radians(lng - CAMPUS.lng)
-  const a = Math.sin(dLat / 2) ** 2 + Math.cos(radians(CAMPUS.lat)) * Math.cos(radians(lat)) * Math.sin(dLng / 2) ** 2
+  const dLat = radians(lat - campus.lat), dLng = radians(lng - campus.lng)
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(radians(campus.lat)) * Math.cos(radians(lat)) * Math.sin(dLng / 2) ** 2
   return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 }
 
@@ -22,11 +22,12 @@ function MapFocus({ listing }: { listing: any }) {
   useEffect(() => {
     const point = pointFor(listing)
     if (point) map.flyTo([point.lat, point.lng], Math.max(map.getZoom(), 15), { duration: 0.45 })
-  }, [listing, map])
+  }, [listing?.id, map])
   return null
 }
 
-export default function MapPage({ savedIds, onSaveToggle, onViewDetails, onListView, listings }: Props) {
+export default function MapPage({ savedIds, onSaveToggle, onViewDetails, onListView, listings, campus: campusProp }: Props) {
+  const CAMPUS = campusProp ?? DEFAULT_CAMPUS
   const mapRef = useRef<any>(null)
   const mappedListings = useMemo(() => listings.filter(pointFor), [listings])
   const [selected, setSelected] = useState<any>(() => mappedListings[0] ?? null)
@@ -67,6 +68,6 @@ export default function MapPage({ savedIds, onSaveToggle, onViewDetails, onListV
       <div className="absolute left-1/2 top-3 z-[500] -translate-x-1/2"><button onClick={onListView} className="flex h-9 items-center gap-1.5 rounded-full bg-primary-dark px-4 text-xs font-bold text-white shadow-lg"><span className="material-symbols-outlined text-[17px]">format_list_bulleted</span>List View ({listings.length})</button></div>
     </div>
 
-    <div className="px-3 pb-28 pt-3"><div className="flex flex-col gap-3 rounded-2xl bg-white p-4 shadow-xl"><div className="flex items-start gap-3"><div className="h-24 w-24 shrink-0 overflow-hidden rounded-xl bg-surface-mid"><img src={(selected.images ?? [])[0] ?? ""} alt={selected.name} className="h-full w-full object-cover" /></div><div className="min-w-0 flex-1"><div className="flex items-center justify-between gap-2"><span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700">Exact map location</span><button onClick={() => onSaveToggle(selected.id)} aria-label="Save listing" className="material-symbols-outlined text-[20px] text-on-surface-muted" style={{ fontVariationSettings: savedIds.has(selected.id) ? "'FILL' 1" : "'FILL' 0" }}>favorite</button></div><h2 className="mt-1 truncate font-display text-base font-bold text-on-surface">{selected.name}</h2><p className="truncate text-xs text-on-surface-muted">{selected.address}</p><p className="mt-1 font-display text-lg font-extrabold text-on-surface">₹{Number(selected.priceFrom ?? selected.price_from ?? 0).toLocaleString("en-IN")}<span className="ml-1 font-sans text-xs font-normal text-on-surface-muted">/ month</span></p></div></div><div className="flex flex-wrap gap-2"><span className="rounded-full bg-surface-high px-2 py-1 text-[11px] font-semibold"><span className="material-symbols-outlined mr-1 align-middle text-[14px]">directions_walk</span>{distanceInKm(selectedPoint.lat, selectedPoint.lng).toFixed(2)} km from campus</span><span className="rounded-full bg-surface-low px-2 py-1 text-[11px] font-semibold text-on-surface-muted">{selectedPoint.lat.toFixed(6)}, {selectedPoint.lng.toFixed(6)}</span></div><div className="grid grid-cols-12 gap-2"><a href={`https://wa.me/${String(selected.phone ?? "").replace("+", "")}?text=${selected.waMessage ?? selected.wa_message ?? ""}`} target="_blank" rel="noopener noreferrer" className="col-span-5 flex h-11 items-center justify-center rounded-full bg-whatsapp text-xs font-semibold text-white">WhatsApp</a><a href={`tel:${selected.phone ?? ""}`} className="col-span-3 flex h-11 items-center justify-center rounded-full bg-surface-mid text-xs font-semibold text-on-surface">Call</a><button onClick={() => onViewDetails(selected.id)} className="col-span-4 flex h-11 items-center justify-center rounded-full bg-primary-dark text-xs font-semibold text-white">Details <span className="material-symbols-outlined ml-1 text-[14px]">arrow_forward</span></button></div></div></div>
+    <div className="px-3 pb-28 pt-3"><div className="flex flex-col gap-3 rounded-2xl bg-white p-4 shadow-xl"><div className="flex items-start gap-3"><div className="h-24 w-24 shrink-0 overflow-hidden rounded-xl bg-surface-mid"><img src={(selected.images ?? [])[0] ?? ""} alt={selected.name} className="h-full w-full object-cover" /></div><div className="min-w-0 flex-1"><div className="flex items-center justify-between gap-2"><span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700">Exact map location</span><button onClick={() => onSaveToggle(selected.id)} aria-label="Save listing" className="material-symbols-outlined text-[20px] text-on-surface-muted" style={{ fontVariationSettings: savedIds.has(selected.id) ? "'FILL' 1" : "'FILL' 0" }}>favorite</button></div><h2 className="mt-1 truncate font-display text-base font-bold text-on-surface">{selected.name}</h2><p className="truncate text-xs text-on-surface-muted">{selected.address}</p><p className="mt-1 font-display text-lg font-extrabold text-on-surface">₹{Number(selected.priceFrom ?? selected.price_from ?? 0).toLocaleString("en-IN")}<span className="ml-1 font-sans text-xs font-normal text-on-surface-muted">/ month</span></p></div></div><div className="flex flex-wrap gap-2"><span className="rounded-full bg-surface-high px-2 py-1 text-[11px] font-semibold"><span className="material-symbols-outlined mr-1 align-middle text-[14px]">directions_walk</span>{distanceInKm(selectedPoint.lat, selectedPoint.lng, CAMPUS).toFixed(2)} km from campus</span><span className="rounded-full bg-surface-low px-2 py-1 text-[11px] font-semibold text-on-surface-muted">{selectedPoint.lat.toFixed(6)}, {selectedPoint.lng.toFixed(6)}</span></div><div className="grid grid-cols-12 gap-2"><a href={`https://wa.me/${String(selected.phone ?? "").replace("+", "")}?text=${selected.waMessage ?? selected.wa_message ?? ""}`} target="_blank" rel="noopener noreferrer" className="col-span-5 flex h-11 items-center justify-center rounded-full bg-whatsapp text-xs font-semibold text-white">WhatsApp</a><a href={`tel:${selected.phone ?? ""}`} className="col-span-3 flex h-11 items-center justify-center rounded-full bg-surface-mid text-xs font-semibold text-on-surface">Call</a><button onClick={() => onViewDetails(selected.id)} className="col-span-4 flex h-11 items-center justify-center rounded-full bg-primary-dark text-xs font-semibold text-white">Details <span className="material-symbols-outlined ml-1 text-[14px]">arrow_forward</span></button></div></div></div>
   </div>
 }

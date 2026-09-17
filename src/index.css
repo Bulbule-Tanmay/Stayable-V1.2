@@ -4,21 +4,21 @@
 @import 'leaflet/dist/leaflet.css';
 
 @theme {
-  --color-primary: #2563EB;
-  --color-primary-dark: #0F172A;
-  --color-surface: #f8f9ff;
-  --color-surface-low: #eff4ff;
-  --color-surface-mid: #e5eeff;
-  --color-surface-high: #dce9ff;
-  --color-surface-highest: #d3e4fe;
+  --color-primary: #4F46E5;
+  --color-primary-dark: #3730A3;
+  --color-surface: #f5f6ff;
+  --color-surface-low: #eef0ff;
+  --color-surface-mid: #e0e3ff;
+  --color-surface-high: #c7cbff;
+  --color-surface-highest: #b5b9ff;
   --color-surface-white: #ffffff;
   --color-on-surface: #0b1c30;
-  --color-on-surface-muted: #45464d;
+  --color-on-surface-muted: #6b7280;
   --color-verified: #059669;
   --color-whatsapp: #25D366;
-  --color-secondary: #0051d5;
+  --color-secondary: #4F46E5;
   --color-slate-dark: #1E293B;
-  --color-outline: #76777d;
+  --color-outline: #9ca3af;
   --color-amber: #f59e0b;
 
   --font-display: "Plus Jakarta Sans", sans-serif;

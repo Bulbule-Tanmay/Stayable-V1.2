@@ -219,7 +219,7 @@ export default function ListingCard({
           {/* CTA bar */}
           <div className="grid grid-cols-12 gap-2 pt-2 mt-1 border-t border-surface-high/40">
             <a
-              href={`https://wa.me/${listing.phone.replace("+", "")}?text=${listing.waMessage ?? listing.wa_message ?? ""}`}
+              href={`https://wa.me/${(listing.phone ?? "").replace("+", "")}?text=${listing.waMessage ?? listing.wa_message ?? ""}`}
               target="_blank"
               rel="noopener noreferrer"
               className="col-span-3 h-11 rounded-full bg-whatsapp text-white flex items-center justify-center gap-1 text-[11px] font-semibold shadow-sm active:scale-95 transition-transform"
