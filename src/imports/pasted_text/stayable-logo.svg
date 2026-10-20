@@ -1,0 +1,1460 @@
+<!-- Stayable Logo -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <rect x="4" y="6" width="28" height="28" rx="8" fill="#2563EB"/>
+  <path d="M12 24L18 13L24 24" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.5 20.5H21.5" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="18" cy="9.5" r="2.5" fill="#38BDF8"/>
+  <text x="38" y="26" fill="#0F172A" font-family="Plus Jakarta Sans, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">Stay<tspan fill="#2563EB">able</tspan></text>
+</svg>
+
+<!-- Portrait of a friendly college student in India, 20 years old, warm smile, neat casual attire, high quality photographic headshot on clean neutral studio background -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "border-subtle": "#E2E8F0", "surface-bright": "#f8f9ff", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "surface-tint": "#565e74", "on-error": "#ffffff", "on-secondary-fixed": "#00174b", "whatsapp-green": "#25D366", "on-tertiary-fixed": "#002113", "on-secondary-container": "#fefcff", "inverse-surface": "#213145", "on-surface-variant": "#45464d", "tertiary": "#000000", "secondary-fixed": "#dbe1ff", "on-primary-fixed": "#131b2e", "primary-container": "#131b2e", "on-secondary-fixed-variant": "#003ea8", "secondary-container": "#316bf3", "surface": "#f8f9ff", "surface-container": "#e5eeff", "on-primary-fixed-variant": "#3f465c", "rent-accent": "#0F172A", "surface-card": "#FFFFFF", "on-primary-container": "#7c839b", "verified-badge": "#059669", "surface-dim": "#cbdbf5", "surface-container-low": "#eff4ff", "inverse-primary": "#bec6e0", "on-tertiary-fixed-variant": "#005236", "on-tertiary": "#ffffff", "on-surface": "#0b1c30", "tertiary-container": "#002113", "primary-fixed": "#dae2fd", "tertiary-fixed-dim": "#4edea3", "background": "#f8f9ff", "slate-surface": "#1E293B", "surface-variant": "#d3e4fe", "inverse-on-surface": "#eaf1ff", "primary": "#000000", "surface-bg": "#F8FAFC", "on-secondary": "#ffffff", "error-container": "#ffdad6", "error": "#ba1a1a", "surface-container-highest": "#d3e4fe", "secondary": "#0051d5", "outline-variant": "#c6c6cd", "tertiary-fixed": "#6ffbbe", "secondary-fixed-dim": "#b4c5ff", "primary-fixed-dim": "#bec6e0", "surface-container-high": "#dce9ff", "on-primary": "#ffffff", "on-background": "#0b1c30", "on-tertiary-container": "#009668", "outline": "#76777d" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-base": "1rem", "space-2xs": "0.125rem", "gutter-mobile": "0.75rem", "space-2xl": "3rem", "space-xl": "2rem", "touch-target-min": "2.75rem", "space-xs": "0.25rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "code-sm": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="Stayable Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIFrV1ZHqI4HvLfdycgDiY63QGR6zl52AOSA8sf6fL6xokpJpurvTvgptlB2hlf5T3kHKM0Fjq4GRaanVWDl746-8jVTdbHVctuAJ3ElbfFMbFrd-U5JMUQS2XVzTtsHLzbvPBlDNlcJK2QLAVsiah8Qdj643bmUNU6RzBSIo-cMb_xgo9HdzX-cnJIRhHz1Fbszzg856B_izZQutG5yPKTEOulAdWql-GrqOCjZf3jgZTenbVcRaUX5c"/><span class="hidden">Stayable</span><span class="hidden">Explore</span></div><button class="flex items-center gap-space-xs h-touch-target-min px-space-md bg-surface-container-low rounded-full transition-colors active:bg-surface-container" type="button"><span class="material-symbols-outlined text-secondary text-[18px]">school</span><span class="font-label-md text-label-md text-on-surface truncate max-w-[140px]">MIT-WPU Pune</span><span class="material-symbols-outlined text-outline text-[16px]">unfold_more</span></button><button class="w-touch-target-min h-touch-target-min flex items-center justify-end rounded-full focus:outline-none" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4FK7Iy9Nw0P-NnpZj64f1OqAgyW3H-SlKejhzIQpa0UR5zDHtrt4UnjSb-neUlViZ9oDOgbq1uiMKdKtZoiWWUIg7a3-78qAjpD5fUm65adZUed6q2qPaEq8YKaZ3yjlykMRV0-hi-U3kbjoHRRPCyr3i7SFD8WgddaXvIQljeQDjb7Ux0J-HeKifMOaxvIDKpxx4j56b6dy-OZIqljM3yV5kXhjmpfUIRrh070x0eNJ3YixBs--I"/></button></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Campus Context Banner -->
+<div class="px-gutter-mobile py-space-sm">
+<div class="bg-surface-container rounded-lg p-space-sm flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-2xs">
+<span class="font-headline-md text-title-md text-on-surface truncate">MIT-WPU, Kothrud</span>
+<span class="material-symbols-outlined text-verified-badge text-[16px] shrink-0" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Paud Road, Pune • Campus Zone</p>
+</div>
+</div>
+<button class="px-space-sm py-space-2xs rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md shrink-0 shadow-sm active:scale-95 transition-transform flex items-center gap-space-2xs" type="button">
+<span>Change</span>
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+</button>
+</div>
+<!-- Live QR Context Badge -->
+<div class="flex items-center justify-between pt-space-xs mt-space-2xs border-t border-surface-container-high/60">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-highest/80 px-space-xs py-0.5 rounded-full">
+<span class="material-symbols-outlined text-rent-accent text-[14px]">qr_code_2</span>
+<span class="font-label-sm text-label-sm text-on-surface">Scanned via Campus Main Gate QR</span>
+</div>
+<span class="inline-flex items-center gap-1 font-code-sm text-code-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-verified-badge animate-pulse"></span>
+<span>Live Availability</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Segmented Type Selector -->
+<div class="px-gutter-mobile pt-space-xs">
+<div class="bg-surface-container-high p-1 rounded-full flex items-center gap-1">
+<button class="flex-1 py-space-xs rounded-full bg-rent-accent text-on-primary font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-space-xs transition-all" id="seg-pgs" type="button">
+<span>PGs (Paying Guest)</span>
+<span class="px-1.5 py-0.5 rounded-full bg-on-primary/20 text-on-primary font-label-sm text-label-sm">28</span>
+</button>
+<button class="flex-1 py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-all" id="seg-flats" type="button">
+<span>Flats (1/2/3 BHK)</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">14</span>
+</button>
+</div>
+</div>
+<!-- Filter Chips Horizontal Scroll -->
+<div class="w-full overflow-x-auto no-scrollbar py-space-sm px-gutter-mobile flex items-center gap-space-xs shrink-0">
+<button class="px-space-md py-1.5 rounded-full bg-rent-accent text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>All Budgets</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0 hover:bg-surface-container-low transition-colors" type="button">
+      &lt; ₹8,000
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0 hover:bg-surface-container-low transition-colors" type="button">
+      Single Room
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0 hover:bg-surface-container-low transition-colors" type="button">
+      Double Sharing
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0 flex items-center gap-1 hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-secondary text-[14px]">restaurant</span>
+      Food Included
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0 flex items-center gap-1 hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-secondary text-[14px]">ac_unit</span>
+      AC
+    </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md whitespace-nowrap shadow-sm shrink-0 flex items-center gap-1 hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-verified-badge text-[14px]">directions_walk</span>
+      Walking (&lt;10m)
+    </button>
+</div>
+<!-- Section Meta Info -->
+<div class="px-gutter-mobile pb-space-xs flex items-center justify-between">
+<p class="font-label-md text-label-md text-on-surface-variant">Showing <span class="text-on-surface font-semibold">28 student accommodations</span></p>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>Zero Brokerage</span>
+</div>
+</div>
+<!-- Accommodations Feed List -->
+<div class="flex flex-col gap-space-md px-gutter-mobile pb-space-2xl">
+<!-- Card 1: Sunrise Premium Student PG -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex flex-col transition-all">
+<!-- Media Carousel Frame -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-surface">
+<img class="w-full h-full object-cover" data-alt="Modern spacious student PG bedroom in Pune near MIT-WPU, neatly made wooden beds with warm study lamp, large window with natural morning light, clean hardwood flooring, ergonomic study desk with laptop and books, serene and welcoming student dorm atmosphere, architectural interior photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIIlY3kZ50gae8xbfb9Wzim4MJ6HiC4WqOdBj9-yJQXABZ7O7WFiHHwrVd8YNXP66gWXcdlCVixX0CfqRVTDSx8wTTk_eEZa1ThUZzJfydtLFWdWy07u2G8vKzm4NgqR5mXr2R1Im2HahnFnSvAJ_llkOe302n2vjQJqVOMBe2IGdnDVQp3hdFqPY5jfZGOffjqp_ZUuP_T2B0jaPGP0Y2R2CJ46ISBdpHBh29uKC7cgy6g-bsjsDa"/>
+<!-- Overlaid Top Distance & Verification Badges -->
+<div class="absolute top-space-xs inset-x-space-xs flex items-center justify-between pointer-events-none">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-surface/85 backdrop-blur-md text-on-primary text-label-sm font-label-sm shadow-md pointer-events-auto">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed">near_me</span>
+<span>450m from MIT-WPU</span>
+<span class="text-on-primary-container">•</span>
+<span class="text-tertiary-fixed">6 min walk</span>
+</div>
+<div class="flex items-center gap-1.5 pointer-events-auto">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-md text-verified-badge font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Verified Host</span>
+</span>
+<button aria-label="Save listing" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform save-btn" onclick="toggleSave(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+</div>
+<!-- Carousel Indicators & Zero Broker Pill -->
+<div class="absolute bottom-space-xs inset-x-space-xs flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-rent-accent/90 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">
+            Zero Brokerage
+          </span>
+<div class="flex items-center gap-1 bg-slate-surface/60 backdrop-blur-sm px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest/50"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest/50"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest/50"></span>
+</div>
+</div>
+</div>
+<!-- Card Core Body -->
+<div class="p-space-base flex flex-col gap-space-sm">
+<!-- Title & Rating Header -->
+<div class="flex items-start justify-between gap-space-xs">
+<div class="min-w-0">
+<div class="inline-flex items-center gap-1 mb-0.5">
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Boys &amp; Co-ed Wings</span>
+<span class="font-code-sm text-code-sm text-verified-badge flex items-center">
+<span class="material-symbols-outlined text-[12px]">bolt</span> Instant Confirmation
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">Sunrise Premium Student PG</h3>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full shrink-0">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">4.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(124)</span>
+</div>
+</div>
+<!-- Rent & Deposit Info -->
+<div class="flex items-baseline justify-between py-1 bg-surface-container-low/60 rounded px-2.5">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-rent-accent font-bold">₹7,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/month</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">₹10,000 Refundable Deposit</span>
+</div>
+<!-- Room Options Multi-tier Pills -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Occupancy &amp; Rates:</span>
+<div class="grid grid-cols-3 gap-1.5">
+<div class="bg-surface-container px-2 py-1 rounded flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Triple</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">₹7,500</span>
+</div>
+<div class="bg-surface-container px-2 py-1 rounded flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Double</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">₹9,200</span>
+</div>
+<div class="bg-surface-container px-2 py-1 rounded flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Single</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">₹13,500</span>
+</div>
+</div>
+</div>
+<!-- Amenities Chips Grid -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">restaurant</span>
+            Food 3x Included
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">wifi</span>
+            High-Speed Wi-Fi
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">ac_unit</span>
+            AC Available
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">cleaning_services</span>
+            Daily Maid
+          </span>
+</div>
+<!-- Card Interaction Bar -->
+<div class="grid grid-cols-12 gap-space-xs pt-space-xs mt-space-2xs border-t border-surface-container-high/40">
+<a class="col-span-3 h-touch-target-min rounded-full bg-whatsapp-green text-on-primary flex items-center justify-center gap-1 font-label-md text-label-md shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi%2C%20I%20saw%20Sunrise%20Premium%20Student%20PG%20on%20Stayable%20for%20MIT-WPU" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.086.289.13.332.202.043.073.043.419-.101.824z"></path></svg>
+<span>WhatsApp</span>
+</a>
+<a class="col-span-3 h-touch-target-min rounded-full bg-surface-container text-on-surface flex items-center justify-center gap-1 font-label-md text-label-md active:scale-95 transition-transform" href="tel:+919876543210">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call</span>
+</a>
+<button class="col-span-6 h-touch-target-min rounded-full bg-rent-accent text-on-primary flex items-center justify-center gap-1 font-label-md text-label-md shadow-sm active:scale-98 transition-transform" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Greenfield Luxury PG for Girls -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex flex-col transition-all">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-surface">
+<img class="w-full h-full object-cover" data-alt="High-end modern girls PG room interior in Pune, light pastel decor, pristine single beds, secure smart biometric door handle visible, floor to ceiling window, study station with cozy lighting, very clean and secure environment, architectural student housing photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlN7R705MEMRXmvtooZjrV1WIpesr0KIZ18Zeqo4Ci25g-r-5wQPz8KCxJZCX2yEHqMXVpQze6DI1EvFwemHbUw8VByL4s1cx1XhXEef23-Wno_M1RkR0nwGjI8koJtXl799NuUrHeiyCxfmY7IXoHeOG8hetrQjLNq4smnNpicu4SJEw78AviQ2DSfiNaPu74ODaw5_GwRp7mMEZiwQArdrC9nyMKnB74biopgilYhVROGKKJn8pJ"/>
+<div class="absolute top-space-xs inset-x-space-xs flex items-center justify-between pointer-events-none">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-surface/85 backdrop-blur-md text-on-primary text-label-sm font-label-sm shadow-md pointer-events-auto">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed">near_me</span>
+<span>850m from MIT-WPU</span>
+<span class="text-on-primary-container">•</span>
+<span class="text-tertiary-fixed">10 min walk</span>
+</div>
+<div class="flex items-center gap-1.5 pointer-events-auto">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-pink-900/80 backdrop-blur-md text-white font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[13px]">female</span>
+<span>Girls Exclusive</span>
+</span>
+<button aria-label="Save listing" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform save-btn" onclick="toggleSave(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+</div>
+<div class="absolute bottom-space-xs left-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-verified-badge text-on-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">shield</span>
+            24/7 Female Warden on Site
+          </span>
+</div>
+</div>
+<div class="p-space-base flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="px-1.5 py-0.2 rounded bg-pink-100 text-pink-800 font-label-sm text-label-sm">Girls Only PG</span>
+<span class="font-code-sm text-code-sm text-secondary flex items-center">
+<span class="material-symbols-outlined text-[12px]">verified</span> Verified Owner
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">Greenfield Luxury PG for Girls</h3>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full shrink-0">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(86)</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between py-1 bg-surface-container-low/60 rounded px-2.5">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-rent-accent font-bold">₹8,800</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mo onwards</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Includes 3 Meals &amp; High-Speed Net</span>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">videocam</span>
+            CCTV &amp; Biometric Security
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">soup_kitchen</span>
+            Homemade North/South Meals
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">mop</span>
+            Daily Housekeeping
+          </span>
+</div>
+<div class="grid grid-cols-12 gap-space-xs pt-space-xs mt-space-2xs border-t border-surface-container-high/40">
+<a class="col-span-3 h-touch-target-min rounded-full bg-whatsapp-green text-on-primary flex items-center justify-center gap-1 font-label-md text-label-md shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543211?text=Hi%2C%20inquiring%20about%20Greenfield%20Girls%20PG%20near%20MIT-WPU" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.086.289.13.332.202.043.073.043.419-.101.824z"></path></svg>
+<span>WhatsApp</span>
+</a>
+<a class="col-span-3 h-touch-target-min rounded-full bg-surface-container text-on-surface flex items-center justify-center gap-1 font-label-md text-label-md active:scale-95 transition-transform" href="tel:+919876543211">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call</span>
+</a>
+<button class="col-span-6 h-touch-target-min rounded-full bg-rent-accent text-on-primary flex items-center justify-center gap-1 font-label-md text-label-md shadow-sm active:scale-98 transition-transform" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: CoLive Ivy Residences (Unisex) -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex flex-col transition-all">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-slate-surface">
+<img class="w-full h-full object-cover" data-alt="Vibrant modern co-living space common area in Pune with university students studying and lounging, sleek cafeteria, pool table in background, exposed brick accents, bright designer lighting, youthful urban student lifestyle, cinematic architectural photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyCyx9VPKDtuKSJ7w3s34YcdGQofjlGY4MVgFWuVRqoq_WhxExuXECvexQX1CydS8uyR0coNspi3wBaLzZTZRGQAhkYnSW3bf0qd58YJvZq6be-krmC1fwWA5ROLuuR6Lac3OGRSPpjW94hfP2ExWsFA27G9xy90wWQpDOs7ZR8hfHUsOm01UdAOcgY7iO7AH58hhEqQydCc6oXU4DFRSXbDJK41LhfExGZZAKtln3jZdSOpI3XGM5"/>
+<div class="absolute top-space-xs inset-x-space-xs flex items-center justify-between pointer-events-none">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-surface/85 backdrop-blur-md text-on-primary text-label-sm font-label-sm shadow-md pointer-events-auto">
+<span class="material-symbols-outlined text-[13px] text-secondary-fixed">near_me</span>
+<span>1.1 km • 14 min walk</span>
+<span class="text-on-primary-container">•</span>
+<span class="text-tertiary-fixed">4 min bike</span>
+</div>
+<div class="flex items-center gap-1.5 pointer-events-auto">
+<button aria-label="Save listing" class="w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center shadow-md active:scale-90 transition-transform save-btn" onclick="toggleSave(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-base flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="min-w-0">
+<div class="flex items-center gap-1 mb-0.5">
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Co-Living / Unisex</span>
+<span class="font-code-sm text-code-sm text-secondary">Managed by CoLive</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface truncate">CoLive Ivy Residences</h3>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded-full shrink-0">
+<span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">4.7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(210)</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between py-1 bg-surface-container-low/60 rounded px-2.5">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-rent-accent font-bold">₹10,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mo</span>
+</div>
+<span class="font-label-sm text-label-sm text-verified-badge font-medium">Free Bi-Weekly Laundry</span>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">fitness_center</span>
+            Gym + Gaming Lounge
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">local_laundry_service</span>
+            Laundry Service
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">battery_charging_full</span>
+            100% Backup Power
+          </span>
+</div>
+<div class="grid grid-cols-12 gap-space-xs pt-space-xs mt-space-2xs border-t border-surface-container-high/40">
+<a class="col-span-3 h-touch-target-min rounded-full bg-whatsapp-green text-on-primary flex items-center justify-center gap-1 font-label-md text-label-md shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543212?text=Hi%2C%20inquiring%20about%20CoLive%20Ivy%20MIT-WPU" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.086.289.13.332.202.043.073.043.419-.101.824z"></path></svg>
+<span>WhatsApp</span>
+</a>
+<a class="col-span-3 h-touch-target-min rounded-full bg-surface-container text-on-surface flex items-center justify-center gap-1 font-label-md text-label-md active:scale-95 transition-transform" href="tel:+919876543212">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call</span>
+</a>
+<button class="col-span-6 h-touch-target-min rounded-full bg-rent-accent text-on-primary flex items-center justify-center gap-1 font-label-md text-label-md shadow-sm active:scale-98 transition-transform" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Student Flat Teaser Banner -->
+<article class="bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low rounded-lg p-space-base shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-rent-accent text-on-primary font-label-sm text-label-sm">
+          Looking for a private apartment?
+        </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">14 Flats Nearby</span>
+</div>
+<div class="flex gap-space-base items-center">
+<div class="w-20 h-20 rounded-md overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover" data-alt="Sunlit living room of a 2BHK student flat in Paud Road Pune, with balcony view, modern modular kitchen counter visible, clean tiled floors, student study setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_nyjsPB2mr0x23RtpJ3d4OLnXWzq2Fl7ez8sXK5DQgxo2UdqOsASc1OTpAYvXXTE6qfb3J-YGcgf7RJZ-VN0vWfNVMhBfU8U8iliqve-OR8tcZXmeXu0pSEKUzBv6x7-mgPRNcsRv4z9MosYawSHseSq_6h6__b6YhUy2PGkStLXFJeSz7iVIbD52LQ38lstdEN_KjOIUPVuTcdXAHCY31MZQiDeWR-Xj3f6ZhS28N8y9qvJ7RN-h"/>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-headline-md text-title-md text-on-surface truncate">Cozy 2 BHK Flat at Paud Road</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">distance</span>
+<span>1.2 km from campus</span>
+</p>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-title-md text-title-md text-rent-accent font-bold">₹22,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/mo</span>
+<span class="font-label-sm text-label-sm text-verified-badge font-semibold ml-1 bg-surface-container-lowest px-1.5 py-0.2 rounded">
+              ₹5,500/each (4 students)
+            </span>
+</div>
+</div>
+</div>
+<button class="w-full h-touch-target-min rounded-full bg-surface-container-lowest text-rent-accent font-label-md text-label-md shadow-sm flex items-center justify-center gap-1 active:scale-98 transition-transform mt-1" onclick="document.getElementById('seg-flats').click()" type="button">
+<span>Browse All Verified Flats</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</article>
+</div>
+<!-- Sticky Bottom Floating Map/List View Toggle Button -->
+<div class="fixed bottom-20 inset-x-0 flex justify-center z-40 pointer-events-none">
+<button class="pointer-events-auto h-touch-target-min px-space-lg rounded-full bg-rent-accent text-on-primary shadow-xl flex items-center gap-space-xs font-label-lg text-label-lg active:scale-95 transition-all hover:bg-slate-surface" id="floating-map-toggle" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">map</span>
+<span>Map View</span>
+<span class="w-1.5 h-1.5 rounded-full bg-verified-badge ml-0.5"></span>
+</button>
+</div>
+</div>
+<script>
+  function toggleSave(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const isSaved = icon.style.fontVariationSettings.includes("'FILL' 1");
+    if (isSaved) {
+      icon.style.fontVariationSettings = "'FILL' 0";
+      icon.classList.remove('text-red-500');
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 1";
+      icon.classList.add('text-red-500');
+      // Gentle micro-bounce animation
+      btn.style.transform = 'scale(1.2)';
+      setTimeout(() => { btn.style.transform = 'scale(1)'; }, 150);
+    }
+  }
+
+  // Segment toggle handling
+  const pgsBtn = document.getElementById('seg-pgs');
+  const flatsBtn = document.getElementById('seg-flats');
+
+  if (pgsBtn && flatsBtn) {
+    pgsBtn.addEventListener('click', () => {
+      pgsBtn.className = 'flex-1 py-space-xs rounded-full bg-rent-accent text-on-primary font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-space-xs transition-all';
+      flatsBtn.className = 'flex-1 py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-all';
+    });
+
+    flatsBtn.addEventListener('click', () => {
+      flatsBtn.className = 'flex-1 py-space-xs rounded-full bg-rent-accent text-on-primary font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-space-xs transition-all';
+      pgsBtn.className = 'flex-1 py-space-xs rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-all';
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs transition-colors text-secondary font-semibold" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm">Explore</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors relative" data-path="saved" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="absolute -top-1 -right-2 px-1.5 py-0.2 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-tight flex items-center justify-center min-w-[16px] h-[16px]">3</span></div><span class="font-label-sm text-label-sm">Saved</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs -mt-3 group" data-path="qr-scan" href="#"><div class="w-11 h-11 rounded-full bg-rent-accent text-on-primary flex items-center justify-center shadow-[0_4px_12px_rgba(15,23,42,0.25)] transition-transform active:scale-95"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span></div><span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">QR Scan</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors" data-path="enquiries" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-label-sm">Enquiries</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>
+
+<!-- Explore Nearby Accommodations -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "border-subtle": "#E2E8F0", "surface-bright": "#f8f9ff", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "surface-tint": "#565e74", "on-error": "#ffffff", "on-secondary-fixed": "#00174b", "whatsapp-green": "#25D366", "on-tertiary-fixed": "#002113", "on-secondary-container": "#fefcff", "inverse-surface": "#213145", "on-surface-variant": "#45464d", "tertiary": "#000000", "secondary-fixed": "#dbe1ff", "on-primary-fixed": "#131b2e", "primary-container": "#131b2e", "on-secondary-fixed-variant": "#003ea8", "secondary-container": "#316bf3", "surface": "#f8f9ff", "surface-container": "#e5eeff", "on-primary-fixed-variant": "#3f465c", "rent-accent": "#0F172A", "surface-card": "#FFFFFF", "on-primary-container": "#7c839b", "verified-badge": "#059669", "surface-dim": "#cbdbf5", "surface-container-low": "#eff4ff", "inverse-primary": "#bec6e0", "on-tertiary-fixed-variant": "#005236", "on-tertiary": "#ffffff", "on-surface": "#0b1c30", "tertiary-container": "#002113", "primary-fixed": "#dae2fd", "tertiary-fixed-dim": "#4edea3", "background": "#f8f9ff", "slate-surface": "#1E293B", "surface-variant": "#d3e4fe", "inverse-on-surface": "#eaf1ff", "primary": "#000000", "surface-bg": "#F8FAFC", "on-secondary": "#ffffff", "error-container": "#ffdad6", "error": "#ba1a1a", "surface-container-highest": "#d3e4fe", "secondary": "#0051d5", "outline-variant": "#c6c6cd", "tertiary-fixed": "#6ffbbe", "secondary-fixed-dim": "#b4c5ff", "primary-fixed-dim": "#bec6e0", "surface-container-high": "#dce9ff", "on-primary": "#ffffff", "on-background": "#0b1c30", "on-tertiary-container": "#009668", "outline": "#76777d" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-base": "1rem", "space-2xs": "0.125rem", "gutter-mobile": "0.75rem", "space-2xl": "3rem", "space-xl": "2rem", "touch-target-min": "2.75rem", "space-xs": "0.25rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "code-sm": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="Stayable Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIFrV1ZHqI4HvLfdycgDiY63QGR6zl52AOSA8sf6fL6xokpJpurvTvgptlB2hlf5T3kHKM0Fjq4GRaanVWDl746-8jVTdbHVctuAJ3ElbfFMbFrd-U5JMUQS2XVzTtsHLzbvPBlDNlcJK2QLAVsiah8Qdj643bmUNU6RzBSIo-cMb_xgo9HdzX-cnJIRhHz1Fbszzg856B_izZQutG5yPKTEOulAdWql-GrqOCjZf3jgZTenbVcRaUX5c"/><span class="hidden">Stayable</span><span class="hidden">Explore</span></div><button class="flex items-center gap-space-xs h-touch-target-min px-space-md bg-surface-container-low rounded-full transition-colors active:bg-surface-container" type="button"><span class="material-symbols-outlined text-secondary text-[18px]">school</span><span class="font-label-md text-label-md text-on-surface truncate max-w-[140px]">MIT-WPU Pune</span><span class="material-symbols-outlined text-outline text-[16px]">unfold_more</span></button><button class="w-touch-target-min h-touch-target-min flex items-center justify-end rounded-full focus:outline-none" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4FK7Iy9Nw0P-NnpZj64f1OqAgyW3H-SlKejhzIQpa0UR5zDHtrt4UnjSb-neUlViZ9oDOgbq1uiMKdKtZoiWWUIg7a3-78qAjpD5fUm65adZUed6q2qPaEq8YKaZ3yjlykMRV0-hi-U3kbjoHRRPCyr3i7SFD8WgddaXvIQljeQDjb7Ux0J-HeKifMOaxvIDKpxx4j56b6dy-OZIqljM3yV5kXhjmpfUIRrh070x0eNJ3YixBs--I"/></button></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full relative select-none">
+<!-- Top College Anchor Glass Bar -->
+<div class="px-gutter-mobile pt-space-xs pb-space-sm z-30">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md rounded-xl p-space-sm shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-2xs">
+<span class="font-title-md text-title-md text-on-surface truncate">MIT-WPU Campus</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary shrink-0">Center</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Showing 28 PGs within 1.5 km radius</p>
+</div>
+</div>
+<button aria-label="Adjust radius" class="h-9 px-space-sm rounded-full bg-surface-container-low text-secondary flex items-center gap-1 active:scale-95 transition-transform shrink-0" type="button">
+<span class="font-label-md text-label-md">1.5 km</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Interactive Map Canvas -->
+<div class="relative w-full h-[520px] overflow-hidden bg-surface-container">
+<!-- Stylized Google Maps Pune Kothrud Vector Background -->
+<svg class="absolute inset-0 w-full h-full object-cover pointer-events-none" fill="none" preserveaspectratio="xMidYMid slice" viewbox="0 0 400 520" xmlns="http://www.w3.org/2000/svg">
+<!-- Land Areas -->
+<rect fill="#E8EDF5" height="520" width="400"></rect>
+<!-- Green Parks / Hills (ARAI / Kothrud Greenery) -->
+<path d="M-20 40 Q 60 70 110 30 T 220 50 L 250 -20 L -30 -20 Z" fill="#D9ECD9" opacity="0.8"></path>
+<path d="M300 420 Q 340 380 410 400 L 420 540 L 280 530 Z" fill="#D9ECD9" opacity="0.7"></path>
+<!-- MIT-WPU Campus Polygon Glow -->
+<path d="M120 180 L 240 170 L 260 250 L 150 270 Z" fill="#316BF3" fill-opacity="0.12"></path>
+<path d="M120 180 L 240 170 L 260 250 L 150 270 Z" opacity="0.6" stroke="#0051D5" stroke-dasharray="4 3" stroke-width="2"></path>
+<text fill="#0051D5" font-family="Plus Jakarta Sans" font-size="10" font-weight="700" letter-spacing="1" opacity="0.85" x="145" y="225">MIT-WPU ZONE</text>
+<!-- Major Roads (Paud Road, Karve Road artery) -->
+<path d="M-20 130 C 100 140, 260 110, 420 80" stroke="#FFFFFF" stroke-linecap="round" stroke-width="12"></path>
+<path d="M-20 130 C 100 140, 260 110, 420 80" stroke="#CBD5E1" stroke-linecap="round" stroke-width="2"></path>
+<!-- Paud Road Label -->
+<text fill="#76777D" font-family="Inter" font-size="9" font-weight="600" letter-spacing="0.5" x="40" y="122">PAUD ROAD</text>
+<!-- Rambaug Colony Road -->
+<path d="M190 70 L 180 320 L 120 520" stroke="#FFFFFF" stroke-linecap="round" stroke-width="9"></path>
+<path d="M190 70 L 180 320 L 120 520" stroke="#CBD5E1" stroke-linecap="round" stroke-width="1.5"></path>
+<text fill="#76777D" font-family="Inter" font-size="8" font-weight="600" transform="rotate(72 186 380)" x="186" y="380">RAMBAUG COLONY</text>
+<!-- Secondary Streets -->
+<path d="M30 260 C 110 260, 210 280, 420 270" stroke="#FFFFFF" stroke-width="7"></path>
+<path d="M90 140 L 90 420" stroke="#FFFFFF" stroke-width="6"></path>
+<path d="M260 100 L 290 380" stroke="#FFFFFF" stroke-width="7"></path>
+<path d="M290 270 L 400 330" stroke="#FFFFFF" stroke-width="5"></path>
+<path d="M120 360 L 280 370" stroke="#FFFFFF" stroke-width="6"></path>
+<!-- Walking Route Line from Sunrise PG (x:130, y:340) to Campus Gate (x:175, y:255) -->
+<path d="M 130 335 L 155 335 L 165 265 L 175 255" id="walking-path" stroke="#0051D5" stroke-dasharray="5 4" stroke-linecap="round" stroke-width="3.5"></path>
+<circle cx="130" cy="335" fill="#0051D5" r="4"></circle>
+<!-- Radius Ring around MIT-WPU Campus -->
+<circle cx="185" cy="225" fill="none" opacity="0.35" r="140" stroke="#316BF3" stroke-dasharray="6 6" stroke-width="1.5"></circle>
+</svg>
+<!-- Walking Metric Pill on Route -->
+<div class="absolute left-[138px] top-[282px] z-10 pointer-events-none transform -translate-x-1/2">
+<div class="bg-rent-accent text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary-fixed">directions_walk</span>
+<span>450m • 6 min</span>
+</div>
+</div>
+<!-- Map Marker: MIT-WPU Campus Gate (Anchor) -->
+<div class="absolute left-[175px] top-[240px] -translate-x-1/2 -translate-y-full z-20 flex flex-col items-center">
+<div class="bg-secondary text-on-secondary px-2.5 py-1 rounded-full shadow-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm tracking-tight whitespace-nowrap">MIT-WPU Main Gate</span>
+</div>
+<div class="w-2.5 h-2.5 bg-secondary rotate-45 -mt-1.5 rounded-xs"></div>
+<div class="w-3 h-1 bg-on-surface/20 rounded-full blur-[1px] mt-0.5"></div>
+</div>
+<!-- Map Marker 1: Selected PG (Sunrise PG) -->
+<button aria-label="Sunrise PG ₹7,500" class="absolute left-[130px] top-[340px] -translate-x-1/2 -translate-y-full z-25 group focus:outline-none" type="button">
+<div class="relative flex flex-col items-center">
+<!-- Pulse ring -->
+<span class="absolute -top-1 w-full h-full rounded-full bg-secondary/30 animate-ping"></span>
+<div class="relative bg-rent-accent text-on-primary px-3 py-1.5 rounded-full shadow-xl flex items-center gap-1.5 transition-transform active:scale-95 ring-2 ring-secondary">
+<span class="w-2 h-2 rounded-full bg-whatsapp-green animate-pulse"></span>
+<span class="font-headline-md text-[13px] text-on-primary font-bold">₹7.5k</span>
+<span class="text-slate-surface">|</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">Sunrise PG</span>
+</div>
+<div class="w-2.5 h-2.5 bg-rent-accent rotate-45 -mt-1.5"></div>
+<div class="w-4 h-1.5 bg-rent-accent/30 rounded-full blur-[2px] mt-0.5"></div>
+</div>
+</button>
+<!-- Map Marker 2: Greenfield PG -->
+<button aria-label="Greenfield PG ₹8,800" class="absolute left-[265px] top-[145px] -translate-x-1/2 -translate-y-full z-15 group focus:outline-none" type="button">
+<div class="flex flex-col items-center">
+<div class="bg-surface-container-lowest text-rent-accent px-2.5 py-1 rounded-full shadow-md flex items-center gap-1 active:scale-95 transition-transform">
+<span class="font-headline-md text-[12px] font-bold">₹8.8k</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">• Greenfield</span>
+</div>
+<div class="w-2 h-2 bg-surface-container-lowest rotate-45 -mt-1"></div>
+<div class="w-3 h-1 bg-on-surface/15 rounded-full blur-[1px]"></div>
+</div>
+</button>
+<!-- Map Marker 3: CoLive Ivy -->
+<button aria-label="CoLive Ivy ₹10,500" class="absolute left-[310px] top-[290px] -translate-x-1/2 -translate-y-full z-15 group focus:outline-none" type="button">
+<div class="flex flex-col items-center">
+<div class="bg-surface-container-lowest text-rent-accent px-2.5 py-1 rounded-full shadow-md flex items-center gap-1 active:scale-95 transition-transform">
+<span class="font-headline-md text-[12px] font-bold">₹10.5k</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">• Ivy CoLive</span>
+</div>
+<div class="w-2 h-2 bg-surface-container-lowest rotate-45 -mt-1"></div>
+<div class="w-3 h-1 bg-on-surface/15 rounded-full blur-[1px]"></div>
+</div>
+</button>
+<!-- Map Marker 4: Shanti PG -->
+<button aria-label="Shanti PG ₹6,200" class="absolute left-[65px] top-[210px] -translate-x-1/2 -translate-y-full z-15 group focus:outline-none" type="button">
+<div class="flex flex-col items-center">
+<div class="bg-surface-container-lowest text-rent-accent px-2.5 py-1 rounded-full shadow-md flex items-center gap-1 active:scale-95 transition-transform">
+<span class="font-headline-md text-[12px] font-bold">₹6.2k</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">• Shanti PG</span>
+</div>
+<div class="w-2 h-2 bg-surface-container-lowest rotate-45 -mt-1"></div>
+<div class="w-3 h-1 bg-on-surface/15 rounded-full blur-[1px]"></div>
+</div>
+</button>
+<!-- Map Marker 5: Flat Option (2BHK) -->
+<button aria-label="2BHK Flat ₹22,000" class="absolute left-[245px] top-[410px] -translate-x-1/2 -translate-y-full z-15 group focus:outline-none" type="button">
+<div class="flex flex-col items-center">
+<div class="bg-surface-container-lowest text-on-surface px-2.5 py-1 rounded-full shadow-md flex items-center gap-1 active:scale-95 transition-transform">
+<span class="w-1.5 h-1.5 rounded-full bg-verified-badge"></span>
+<span class="font-headline-md text-[12px] font-bold text-on-surface">₹22k</span>
+<span class="font-label-sm text-[11px] text-verified-badge">2BHK Flat</span>
+</div>
+<div class="w-2 h-2 bg-surface-container-lowest rotate-45 -mt-1"></div>
+<div class="w-3 h-1 bg-on-surface/15 rounded-full blur-[1px]"></div>
+</div>
+</button>
+<!-- Floating Map Control Buttons (Right Side) -->
+<div class="absolute right-gutter-mobile top-space-sm z-30 flex flex-col gap-space-xs">
+<button aria-label="Layers and filters" class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</button>
+<button aria-label="Current Location" class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center text-secondary hover:bg-surface-container active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">my_location</span>
+</button>
+<button aria-label="Toggle Traffic" class="w-10 h-10 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center text-on-surface hover:bg-surface-container active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">traffic</span>
+</button>
+</div>
+<!-- List View Switcher Floating Pill (Center-Bottom of Map) -->
+<div class="absolute left-1/2 -translate-x-1/2 top-space-sm z-30">
+<a class="h-9 px-4 rounded-full bg-rent-accent text-on-primary shadow-lg flex items-center gap-1.5 active:scale-95 transition-transform font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[17px]">format_list_bulleted</span>
+<span>List View (28)</span>
+</a>
+</div>
+</div>
+<!-- Selected Property Drawer / Card (Docked Bottom Card) -->
+<div class="px-gutter-mobile -mt-16 z-35 relative mb-space-base">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-xl flex flex-col gap-space-sm">
+<!-- Top Row: Thumbnail, Basic Info, Price -->
+<div class="flex gap-space-md items-start">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Bright modern student hostel room with wooden study desk, ergonomic chair, neatly made single bed, warm ambient lighting, large window overlooking green Pune neighborhood, clean minimalist interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgA1cnr49orRHG9suRuv30q2B2RfLp57NQkOezFtIQJXKNeiZLOMmIZeE6d5b0SNlaYuGRhBx4g2vAylhHxQeA9YoruFKl0zSYvtUIq72J8f0KVwN0seY4Wnv6o1xKfFQ90u4whEd3djbf4XOzdI8LZgKdjgspfg-pGTB1xar-Rr8N0Yvl9I-6ZLPlcs76h-GHrqpVw6XeZLXG90uy_mYmJ9e4WtOIZrDrjhB2rLAv0CXbZrypkfpD"/>
+<div class="absolute top-1 left-1 bg-rent-accent/80 backdrop-blur-xs rounded-full px-1.5 py-0.5 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px] text-surface-bright">photo_camera</span>
+<span class="font-label-sm text-[9px] text-surface-bright">12</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px] text-verified-badge" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-[11px] text-verified-badge">Verified Listing</span>
+</div>
+<button aria-label="Save listing" class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1 truncate">Sunrise Premium PG</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Near Ideal Colony, Paud Road</p>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">₹7,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ month</span>
+</div>
+</div>
+</div>
+<!-- Occupancy & Distance Badges -->
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-full text-on-primary-fixed">
+<span class="material-symbols-outlined text-[14px]">directions_walk</span>
+<span class="font-label-sm text-label-sm font-semibold">450m from MIT-WPU</span>
+<span class="text-on-surface-variant text-[10px]">• 6 min</span>
+</div>
+<div class="bg-surface-container-low text-on-surface-variant px-2 py-1 rounded-full font-label-sm text-label-sm">
+          Single / Double Sharing
+        </div>
+<div class="bg-surface-container-low text-on-surface-variant px-2 py-1 rounded-full font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">restaurant</span>
+<span>Food Included</span>
+</div>
+</div>
+<!-- Action Buttons Row -->
+<div class="grid grid-cols-12 gap-space-xs pt-space-xs">
+<!-- WhatsApp CTA -->
+<a class="col-span-6 h-touch-target-min rounded-full bg-whatsapp-green text-on-primary flex items-center justify-center gap-1.5 px-space-sm active:scale-98 transition-transform shadow-sm font-label-lg text-label-lg" href="https://wa.me/919876543210" rel="noopener" target="_blank">
+<svg class="w-4 h-4 fill-current shrink-0" viewbox="0 0 24 24">
+<path d="M12.031 2C6.502 2 2.012 6.486 2.012 12.01C2.012 13.78 2.477 15.513 3.36 17.042L2 22L7.098 20.666C8.583 21.48 10.285 21.91 12.025 21.91H12.031C17.556 21.91 22.046 17.424 22.048 11.901C22.048 9.227 21.006 6.721 19.117 4.832C17.228 2.943 14.717 2 12.031 2ZM12.031 20.218C10.518 20.218 9.039 19.814 7.747 19.048L7.44 18.865L4.417 19.658L5.224 16.712L5.023 16.392C4.181 15.053 3.738 13.501 3.738 11.901C3.738 7.441 7.458 3.725 12.035 3.725C14.225 3.725 16.284 4.58 17.834 6.13C19.384 7.68 20.237 9.739 20.237 11.901C20.235 16.362 16.516 20.218 12.031 20.218Z"></path>
+</svg>
+<span class="truncate">WhatsApp</span>
+</a>
+<!-- Call CTA -->
+<a class="col-span-3 h-touch-target-min rounded-full bg-surface-container text-on-surface flex items-center justify-center gap-1 active:scale-95 transition-transform font-label-md text-label-md" href="tel:+919876543210">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call</span>
+</a>
+<!-- Directions CTA -->
+<button aria-label="Get route directions" class="col-span-3 h-touch-target-min rounded-full bg-surface-container-low text-secondary flex items-center justify-center gap-1 active:scale-95 transition-transform font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Route</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions Script for Marker Focus -->
+<script>
+    (function() {
+      // Provide lively visual feedback when switching pins
+      const pins = document.querySelectorAll('button[aria-label*="PG"], button[aria-label*="Flat"]');
+      pins.forEach(pin => {
+        pin.addEventListener('click', function() {
+          pins.forEach(p => {
+            const inner = p.querySelector('div');
+            if (inner) inner.classList.remove('ring-2', 'ring-secondary');
+          });
+          const targetInner = this.querySelector('div');
+          if (targetInner) {
+            targetInner.classList.add('ring-2', 'ring-secondary');
+          }
+        });
+      });
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs transition-colors text-secondary font-semibold" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm">Explore</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors relative" data-path="saved" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="absolute -top-1 -right-2 px-1.5 py-0.2 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-tight flex items-center justify-center min-w-[16px] h-[16px]">3</span></div><span class="font-label-sm text-label-sm">Saved</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs -mt-3 group" data-path="qr-scan" href="#"><div class="w-11 h-11 rounded-full bg-rent-accent text-on-primary flex items-center justify-center shadow-[0_4px_12px_rgba(15,23,42,0.25)] transition-transform active:scale-95"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span></div><span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">QR Scan</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors" data-path="enquiries" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-label-sm">Enquiries</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>
+
+<!-- College Map View -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "border-subtle": "#E2E8F0", "surface-bright": "#f8f9ff", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "surface-tint": "#565e74", "on-error": "#ffffff", "on-secondary-fixed": "#00174b", "whatsapp-green": "#25D366", "on-tertiary-fixed": "#002113", "on-secondary-container": "#fefcff", "inverse-surface": "#213145", "on-surface-variant": "#45464d", "tertiary": "#000000", "secondary-fixed": "#dbe1ff", "on-primary-fixed": "#131b2e", "primary-container": "#131b2e", "on-secondary-fixed-variant": "#003ea8", "secondary-container": "#316bf3", "surface": "#f8f9ff", "surface-container": "#e5eeff", "on-primary-fixed-variant": "#3f465c", "rent-accent": "#0F172A", "surface-card": "#FFFFFF", "on-primary-container": "#7c839b", "verified-badge": "#059669", "surface-dim": "#cbdbf5", "surface-container-low": "#eff4ff", "inverse-primary": "#bec6e0", "on-tertiary-fixed-variant": "#005236", "on-tertiary": "#ffffff", "on-surface": "#0b1c30", "tertiary-container": "#002113", "primary-fixed": "#dae2fd", "tertiary-fixed-dim": "#4edea3", "background": "#f8f9ff", "slate-surface": "#1E293B", "surface-variant": "#d3e4fe", "inverse-on-surface": "#eaf1ff", "primary": "#000000", "surface-bg": "#F8FAFC", "on-secondary": "#ffffff", "error-container": "#ffdad6", "error": "#ba1a1a", "surface-container-highest": "#d3e4fe", "secondary": "#0051d5", "outline-variant": "#c6c6cd", "tertiary-fixed": "#6ffbbe", "secondary-fixed-dim": "#b4c5ff", "primary-fixed-dim": "#bec6e0", "surface-container-high": "#dce9ff", "on-primary": "#ffffff", "on-background": "#0b1c30", "on-tertiary-container": "#009668", "outline": "#76777d" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-base": "1rem", "space-2xs": "0.125rem", "gutter-mobile": "0.75rem", "space-2xl": "3rem", "space-xl": "2rem", "touch-target-min": "2.75rem", "space-xs": "0.25rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "code-sm": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button class="w-touch-target-min h-touch-target-min flex items-center justify-center text-on-surface rounded-full active:bg-surface-container" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="Stayable Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIFrV1ZHqI4HvLfdycgDiY63QGR6zl52AOSA8sf6fL6xokpJpurvTvgptlB2hlf5T3kHKM0Fjq4GRaanVWDl746-8jVTdbHVctuAJ3ElbfFMbFrd-U5JMUQS2XVzTtsHLzbvPBlDNlcJK2QLAVsiah8Qdj643bmUNU6RzBSIo-cMb_xgo9HdzX-cnJIRhHz1Fbszzg856B_izZQutG5yPKTEOulAdWql-GrqOCjZf3jgZTenbVcRaUX5c"/><h1 class="font-title-md text-title-md text-on-surface truncate ml-space-xs max-w-[160px]">Listing Details</h1></div><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4FK7Iy9Nw0P-NnpZj64f1OqAgyW3H-SlKejhzIQpa0UR5zDHtrt4UnjSb-neUlViZ9oDOgbq1uiMKdKtZoiWWUIg7a3-78qAjpD5fUm65adZUed6q2qPaEq8YKaZ3yjlykMRV0-hi-U3kbjoHRRPCyr3i7SFD8WgddaXvIQljeQDjb7Ux0J-HeKifMOaxvIDKpxx4j56b6dy-OZIqljM3yV5kXhjmpfUIRrh070x0eNJ3YixBs--I"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface flex-1"><div class="flex flex-col w-full pb-28">
+<div class="relative w-full aspect-[16/11] bg-surface-container overflow-hidden">
+<div class="flex w-full h-full transition-transform duration-300 ease-out" id="carouselTrack">
+<div class="min-w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Modern spacious student PG bedroom near Pune university with neat single wooden beds, warm ambient desk lighting, ergonomic study chairs, modern minimalist aesthetic, and sunlight through large clean windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmZIPh5o346aFdY8JLAciiMGkoAvNFT4M90_cIMoZbCUiaYdlHa_Wpachvr4vX6DDGtILWI8_dPlw5-HP5CYq5mSmvjS208MW48I_RAXz5kO_KaKAyAj74qlz5x-x7TZOfXodQxlUNn-I0pa9yh0lzidcP7wvpKPkBWdA4xSjtj3GBpzGe9Iu1zORFhetxKEJFNk7h05KG4wSIZghpmpCdvuvdeciv8z3ZIEVN6h1sZuMFxGIbn_b4"/>
+</div>
+<div class="min-w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Well-lit cozy study room in high-end student accommodation with bookshelves, power outlets for laptops, high speed wifi router, and peaceful academic atmosphere in Pune." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDevMkyIAjJX9FezvQRf9QeVZywSMDVWegEkVunxO8PLjZuvxOKFsTqAjMKWGpDhd6SevpMfS88gg7SdmSkFZQJOmelXiwWESEyo-qbieEHaKs8cdXs-figeU4E_tbnU3bm3hZM-SpNf71VLi72sO-6dziGHdj3UEp27umL4Talj2XgSneynYH45rKuNIp1zO9g2HHHfEhitYGBaaQJzeKYu6CCzCeQnAM43l9plm9HKIpgck1EBNWh"/>
+</div>
+<div class="min-w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Spotless modern communal dining and cafeteria area in upscale student PG hostel with clean counters, nutritious fresh thali lunch setup, and warm welcoming lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARP9d_eHmVi-u4rRlqxOcGTWmBebbxdiEpapA1XAvlyH_y4GsOzuVercDWr7vcqfe00CGGyfkP3I7WANZumXDLJlJWHS0b08IHIG7cSH2mxog6qrR_atIzJW6EgeomtNNK0w6YTTH0yc_HY4LiGCGifOl1ehDGLSqIFEGJ-MJYIX-7dvu-iUDkW37Jyu7-XuCK3zVc7Nft9oCN_AqRSb0bJnaq1Nv3rySuI53zcmd9B-qhftzaWtl2"/>
+</div>
+<div class="min-w-full h-full relative">
+<img class="w-full h-full object-cover" data-alt="Contemporary clean attached bathroom in student hostel with ceramic white tiles, modern geyser, high pressure shower, and sparkling clean mirror." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBaIYZ_9GWOugTF6qtdRT1uBUhAYrCfXj1Sc2iKj0xgpEmcCtiSTfUKCLb5wK6CS40h8Ug2pIR_xG0gLeCaqx5eD1Ng1wohezgU_f6713RzT-pyEFV2yMYxW871zRcEmI2Imtp4sZjXVwiWoNNATDlTGKar22zCElji6zJ8QLcY3c2TUcpghswr7M2z215K13zQGUYJsSKPyam9tE9DPJbGMASXWBM1r5SlHRav5kMvMjnjfMf7qSE"/>
+</div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-rent-accent/70 via-transparent to-rent-accent/40 pointer-events-none"></div>
+<div class="absolute top-3 inset-x-3 flex items-center justify-between z-10">
+<button aria-label="Go back" class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-95 transition-transform" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Share listing" class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-95 transition-transform" id="shareBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button aria-label="Save listing" class="w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm active:scale-95 transition-transform" id="bookmarkBtn" type="button">
+<span class="material-symbols-outlined text-[20px]" id="bookmarkIcon">favorite_border</span>
+</button>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 z-10">
+<div class="px-2.5 py-1 rounded-full bg-rent-accent/80 backdrop-blur-md text-surface-container-lowest font-code-sm text-code-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">photo_library</span>
+<span id="photoIndicator">1/8</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 z-10 flex gap-1.5">
+<button aria-label="Previous photo" class="w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-sm flex items-center justify-center text-on-surface shadow-sm active:scale-95" onclick="prevSlide()" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button aria-label="Next photo" class="w-7 h-7 rounded-full bg-surface-container-lowest/70 backdrop-blur-sm flex items-center justify-center text-on-surface shadow-sm active:scale-95" onclick="nextSlide()" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="px-gutter-mobile pt-space-base flex flex-col gap-space-base">
+<div class="flex flex-wrap gap-1.5 items-center">
+<div class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Verified Owner</span>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>Student Favorite</span>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">savings</span>
+<span>Zero Brokerage</span>
+</div>
+</div>
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Sunrise Premium Student Living</h2>
+<div class="flex items-start gap-1 mt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">location_on</span>
+<p class="font-body-sm text-body-sm">Plot 42, Ideal Colony, Near MIT-WPU Gate 2, Kothrud, Pune</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-2xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">MIT-WPU Pune</span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">450 meters away</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Nearest Campus</span>
+</div>
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="bg-surface-container-lowest p-2 rounded-xl text-center shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Walk</span>
+<span class="font-label-lg text-label-lg text-on-surface">🚶 6 min</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-xl text-center shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Bike</span>
+<span class="font-label-lg text-label-lg text-on-surface">🚲 2 min</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-xl text-center shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Drive</span>
+<span class="font-label-lg text-label-lg text-on-surface">🚗 2 min</span>
+</div>
+</div>
+<a class="w-full h-11 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-xl flex items-center justify-center gap-2 shadow-sm active:bg-surface-container transition-colors" href="https://maps.google.com/?q=MIT-WPU+Pune+Kothrud" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">near_me</span>
+<span>Open Google Maps Directions</span>
+</a>
+</div>
+<div class="bg-cover bg-center" data-location="MIT-WPU Pune Ideal Colony Kothrud" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBx-u28MrGpqKqvcX2h86JnPBytbPxg3GBYB2zP88HEqWVNE9SnmQJI5prtWfbVj5ufloB8b5K-xi3igUb2wj0rfxTXTG683JWGCMo6-eYROZPrn5ZlCVVP89TO9Q6f3RScQlGi0aowuStaPiiqFxjSufvFtu5g1jfQOHDIKFZhME04f18c0ACgRVHramjamvkv5D5PeQoclKAQSyWetPYm62gu9elJ0WPl-2Af-V04L3psFn2FG9eg')">
+<div class="absolute inset-0 bg-rent-accent/20"></div>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-on-surface font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">explore</span>
+<span>Campus Perimeter Zone</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Room Options</h3>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Academic Year 2025</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Triple Sharing</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">1 bed left</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Attached bath • Balcony facing garden</p>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface">₹7,500</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant block">/month</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center justify-between relative overflow-hidden">
+<div class="absolute -left-1 top-3 bottom-3 w-1.5 bg-secondary rounded-r"></div>
+<div class="flex flex-col gap-0.5 pl-1.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Double Sharing</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Available</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Spacious wardrobes • Twin study tables</p>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-secondary">₹9,200</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant block">/month</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-center justify-between opacity-85">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Private Single Room</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Waitlist</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Premium AC • Dedicated workstation</p>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface">₹13,500</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant block">/month</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low px-space-md py-2.5 rounded-xl flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">info</span>
+<p class="font-body-sm text-body-sm">
+<strong>Security Deposit:</strong> ₹10,000 (Refundable, 30-day notice period)
+        </p>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface">Amenities &amp; Facilities</h3>
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">wifi</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">300 Mbps Wi-Fi</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Dual-band mesh</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">restaurant</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">3 Meals / Day</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Veg &amp; Non-Veg</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_laundry_service</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Floor Laundry</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Automatic wash</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Air Conditioner</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">5-star inverter</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">fingerprint</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Biometric Entry</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">CCTV in corridors</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">24/7 Power Backup</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Silent generator</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">RO Water Purifier</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">UV+UF dispensor</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">cleaning_services</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Daily Cleaning</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Rooms &amp; washrooms</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Student Reviews</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">84 verified student residents</p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[18px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-md text-headline-md text-on-surface">4.8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/5.0</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-md text-label-md">
+                AS
+              </div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Ananya Sharma</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">MIT-WPU • B.Tech CSE (3rd Yr)</span>
+</div>
+</div>
+<div class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+<span>Resident</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            "The food quality here is leagues ahead of other hostels in Kothrud. Real home-style Maharashtrian &amp; North Indian options. Also, 6 mins walk to Gate 2 saves tons of auto hassle every morning."
+          </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">High Quality Meals</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Quiet Study Environment</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-md text-label-md">
+                RK
+              </div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Rohan Kulkarni</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">COEP Alum • Tech Intern</span>
+</div>
+</div>
+<div class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+<span>Resident</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+            "Gate timing is genuinely sensible and flexible for project work submissions. Biometric entry works smoothly and the owner uncle is polite and approachable."
+          </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Flexible Timings</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Strong Wi-Fi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-8px_24px_rgba(15,23,42,0.08)] pb-safe">
+<div class="px-gutter-mobile py-2.5 flex items-center justify-between gap-3 max-w-lg mx-auto">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">No Brokerage</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface truncate">₹7.5k - 13.5k</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant shrink-0">/mo</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<a class="h-11 px-3.5 rounded-full bg-whatsapp-green text-on-secondary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/919876543210?text=Hi,%20I%20am%20interested%20in%20Sunrise%20Premium%20Student%20Living%20near%20MIT-WPU." rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+</svg>
+<span>WhatsApp</span>
+</a>
+<a class="h-11 px-4 rounded-full bg-rent-accent text-surface-container-lowest font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm active:bg-slate-surface transition-colors" href="tel:+919876543210">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Owner</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    let currentSlide = 0;
+    const totalSlides = 4;
+    const track = document.getElementById('carouselTrack');
+    const indicator = document.getElementById('photoIndicator');
+
+    window.nextSlide = function() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    };
+
+    window.prevSlide = function() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    };
+
+    function updateCarousel() {
+      if (track) {
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      }
+      if (indicator) {
+        indicator.textContent = `${currentSlide + 1}/${totalSlides * 2}`;
+      }
+    }
+
+    const bookmarkBtn = document.getElementById('bookmarkBtn');
+    const bookmarkIcon = document.getElementById('bookmarkIcon');
+    let isBookmarked = false;
+
+    if (bookmarkBtn && bookmarkIcon) {
+      bookmarkBtn.addEventListener('click', function() {
+        isBookmarked = !isBookmarked;
+        if (isBookmarked) {
+          bookmarkIcon.textContent = 'favorite';
+          bookmarkIcon.style.fontVariationSettings = "'FILL' 1";
+          bookmarkBtn.classList.add('text-error');
+        } else {
+          bookmarkIcon.textContent = 'favorite_border';
+          bookmarkIcon.style.fontVariationSettings = "'FILL' 0";
+          bookmarkBtn.classList.remove('text-error');
+        }
+      });
+    }
+
+    const shareBtn = document.getElementById('shareBtn');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', function() {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Sunrise Premium Student Living',
+            text: 'Found this PG 450m from MIT-WPU Pune with food and Wi-Fi.',
+            url: window.location.href
+          }).catch(function() {});
+        }
+      });
+    }
+  })();
+</script></main></body></html>
+
+<!-- PG Property Details & Direct Contact -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "border-subtle": "#E2E8F0", "surface-bright": "#f8f9ff", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "surface-tint": "#565e74", "on-error": "#ffffff", "on-secondary-fixed": "#00174b", "whatsapp-green": "#25D366", "on-tertiary-fixed": "#002113", "on-secondary-container": "#fefcff", "inverse-surface": "#213145", "on-surface-variant": "#45464d", "tertiary": "#000000", "secondary-fixed": "#dbe1ff", "on-primary-fixed": "#131b2e", "primary-container": "#131b2e", "on-secondary-fixed-variant": "#003ea8", "secondary-container": "#316bf3", "surface": "#f8f9ff", "surface-container": "#e5eeff", "on-primary-fixed-variant": "#3f465c", "rent-accent": "#0F172A", "surface-card": "#FFFFFF", "on-primary-container": "#7c839b", "verified-badge": "#059669", "surface-dim": "#cbdbf5", "surface-container-low": "#eff4ff", "inverse-primary": "#bec6e0", "on-tertiary-fixed-variant": "#005236", "on-tertiary": "#ffffff", "on-surface": "#0b1c30", "tertiary-container": "#002113", "primary-fixed": "#dae2fd", "tertiary-fixed-dim": "#4edea3", "background": "#f8f9ff", "slate-surface": "#1E293B", "surface-variant": "#d3e4fe", "inverse-on-surface": "#eaf1ff", "primary": "#000000", "surface-bg": "#F8FAFC", "on-secondary": "#ffffff", "error-container": "#ffdad6", "error": "#ba1a1a", "surface-container-highest": "#d3e4fe", "secondary": "#0051d5", "outline-variant": "#c6c6cd", "tertiary-fixed": "#6ffbbe", "secondary-fixed-dim": "#b4c5ff", "primary-fixed-dim": "#bec6e0", "surface-container-high": "#dce9ff", "on-primary": "#ffffff", "on-background": "#0b1c30", "on-tertiary-container": "#009668", "outline": "#76777d" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-base": "1rem", "space-2xs": "0.125rem", "gutter-mobile": "0.75rem", "space-2xl": "3rem", "space-xl": "2rem", "touch-target-min": "2.75rem", "space-xs": "0.25rem", "space-md": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem" }, "fontFamily": { "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "code-sm": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "code-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "800" }], "headline-md": ["18px", { "lineHeight": "24px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="Stayable Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIFrV1ZHqI4HvLfdycgDiY63QGR6zl52AOSA8sf6fL6xokpJpurvTvgptlB2hlf5T3kHKM0Fjq4GRaanVWDl746-8jVTdbHVctuAJ3ElbfFMbFrd-U5JMUQS2XVzTtsHLzbvPBlDNlcJK2QLAVsiah8Qdj643bmUNU6RzBSIo-cMb_xgo9HdzX-cnJIRhHz1Fbszzg856B_izZQutG5yPKTEOulAdWql-GrqOCjZf3jgZTenbVcRaUX5c"/><span class="hidden">Stayable</span><span class="hidden">Qr Scan</span></div><button class="flex items-center gap-space-xs h-touch-target-min px-space-md bg-surface-container-low rounded-full transition-colors active:bg-surface-container" type="button"><span class="material-symbols-outlined text-secondary text-[18px]">school</span><span class="font-label-md text-label-md text-on-surface truncate max-w-[140px]">MIT-WPU Pune</span><span class="material-symbols-outlined text-outline text-[16px]">unfold_more</span></button><button class="w-touch-target-min h-touch-target-min flex items-center justify-end rounded-full focus:outline-none" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4FK7Iy9Nw0P-NnpZj64f1OqAgyW3H-SlKejhzIQpa0UR5zDHtrt4UnjSb-neUlViZ9oDOgbq1uiMKdKtZoiWWUIg7a3-78qAjpD5fUm65adZUed6q2qPaEq8YKaZ3yjlykMRV0-hi-U3kbjoHRRPCyr3i7SFD8WgddaXvIQljeQDjb7Ux0J-HeKifMOaxvIDKpxx4j56b6dy-OZIqljM3yV5kXhjmpfUIRrh070x0eNJ3YixBs--I"/></button></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Value Banner -->
+<div class="px-gutter-mobile pt-space-xs pb-space-sm">
+<div class="bg-surface-container-low rounded-lg p-space-sm shadow-sm flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-verified-badge text-[20px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div class="flex flex-wrap items-center gap-x-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="font-label-md text-label-md text-rent-accent">0% Brokerage</span>
+<span>•</span>
+<span>Verified Walk Times</span>
+<span>•</span>
+<span class="text-whatsapp-green font-label-md text-label-md">Direct Owner Contact</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px] shrink-0">info</span>
+</div>
+</div>
+<!-- Interactive QR Scanner Hero -->
+<section class="px-gutter-mobile py-space-xs">
+<div class="relative overflow-hidden bg-rent-accent text-on-primary rounded-lg shadow-xl p-space-base flex flex-col items-center text-center">
+<!-- Glow Gradients -->
+<div class="absolute -top-16 -right-16 w-44 h-44 bg-secondary/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -left-16 w-44 h-44 bg-tertiary-fixed/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Campus Live Badge -->
+<div class="inline-flex items-center gap-1.5 px-space-md py-1 bg-surface-container-lowest/15 backdrop-blur-md rounded-full mb-space-md">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-surface-container-lowest tracking-wide uppercase">On-Campus QR Sync</span>
+</div>
+<!-- Scanner Graphic / Viewfinder -->
+<div class="relative w-48 h-48 my-space-xs flex items-center justify-center">
+<!-- Target Reticle Corners -->
+<div class="absolute inset-0 p-1 flex flex-col justify-between pointer-events-none">
+<div class="flex justify-between">
+<div class="w-6 h-6 border-t-2 border-l-2 border-tertiary-fixed rounded-tl-md"></div>
+<div class="w-6 h-6 border-t-2 border-r-2 border-tertiary-fixed rounded-tr-md"></div>
+</div>
+<div class="flex justify-between">
+<div class="w-6 h-6 border-b-2 border-l-2 border-tertiary-fixed rounded-bl-md"></div>
+<div class="w-6 h-6 border-b-2 border-r-2 border-tertiary-fixed rounded-br-md"></div>
+</div>
+</div>
+<!-- Scanning Beam Line -->
+<div class="absolute inset-x-3 h-0.5 bg-gradient-to-r from-transparent via-tertiary-fixed to-transparent animate-[pulse_2s_ease-in-out_infinite] shadow-[0_0_12px_#6ffbbe]"></div>
+<!-- Central Target Card Illustration -->
+<div class="w-36 h-36 rounded-DEFAULT bg-slate-surface/80 backdrop-blur-md flex flex-col items-center justify-center p-space-sm shadow-inner relative overflow-hidden group">
+<span class="material-symbols-outlined text-[44px] text-tertiary-fixed-dim transition-transform duration-300 group-hover:scale-110">qr_code_scanner</span>
+<span class="font-code-sm text-code-sm text-outline-variant mt-1">Point at Campus Board</span>
+<!-- Radar sweep micro wave -->
+<div class="absolute inset-0 rounded-DEFAULT bg-secondary-container/10 pointer-events-none"></div>
+</div>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-surface-container-lowest mt-space-sm mb-space-xs">
+        Scan College QR Code
+      </h1>
+<p class="font-body-sm text-body-sm text-outline-variant max-w-[280px] mb-space-base">
+        Scan physical Stayable posters or stands at your college gate or canteen to auto-load all verified nearby PGs &amp; Flats.
+      </p>
+<!-- Action Button Group -->
+<div class="w-full flex flex-col gap-space-xs">
+<button class="w-full h-touch-target-min bg-surface-container-lowest text-rent-accent rounded-full font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md active:scale-95 transition-all" id="activate-camera-btn" type="button">
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+<span>Activate Camera Scanner</span>
+</button>
+<div class="flex items-center justify-center gap-space-sm pt-space-2xs">
+<button class="flex items-center gap-1.5 py-1.5 px-space-md text-surface-container-lowest/80 font-label-md text-label-md hover:text-surface-container-lowest active:opacity-75 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+<span>Upload QR Image</span>
+</button>
+<span class="text-outline-variant">•</span>
+<button class="flex items-center gap-1.5 py-1.5 px-space-md text-surface-container-lowest/80 font-label-md text-label-md hover:text-surface-container-lowest active:opacity-75 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+<span>Where to find?</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Autocomplete College Search Bar -->
+<section class="px-gutter-mobile pt-space-base pb-space-xs">
+<div class="relative flex items-center">
+<div class="absolute left-space-md flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input autocomplete="off" class="w-full h-[52px] pl-11 pr-11 bg-surface-container-lowest rounded-full font-body-md text-body-md text-on-surface shadow-sm focus:outline-none focus:shadow-md focus:bg-surface-bright transition-all" id="college-search-input" placeholder="Search college name, university, or landmark..." type="search"/>
+<button class="hidden absolute right-space-sm w-8 h-8 rounded-full items-center justify-center text-outline hover:text-on-surface" id="clear-search-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</section>
+<!-- Quick Filter Tags -->
+<div class="px-gutter-mobile py-space-xs overflow-x-auto no-scrollbar flex items-center gap-space-xs">
+<button class="shrink-0 px-space-md py-1.5 bg-rent-accent text-on-primary rounded-full font-label-sm text-label-sm shadow-sm" type="button">
+      All Campuses
+    </button>
+<button class="shrink-0 px-space-md py-1.5 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low rounded-full font-label-sm text-label-sm shadow-sm transition-colors" type="button">
+      Engineering Hubs
+    </button>
+<button class="shrink-0 px-space-md py-1.5 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low rounded-full font-label-sm text-label-sm shadow-sm transition-colors" type="button">
+      Management / Law
+    </button>
+<button class="shrink-0 px-space-md py-1.5 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low rounded-full font-label-sm text-label-sm shadow-sm transition-colors" type="button">
+      Medical &amp; Nursing
+    </button>
+</div>
+<!-- Colleges List -->
+<section class="px-gutter-mobile pt-space-xs pb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-2xs pt-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface flex items-center gap-1.5">
+<span>Popular Pune Colleges</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded-full text-secondary">5 Active Hubs</span>
+</h2>
+<span class="font-label-md text-label-md text-secondary cursor-pointer">View Map</span>
+</div>
+<!-- College Card 1: Active MIT-WPU -->
+<div class="college-item relative bg-surface-container-lowest rounded-lg p-space-md shadow-md flex flex-col gap-space-sm transition-transform active:scale-[0.99]" data-college="mit-wpu world peace university kothrud">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT bg-secondary-container/15 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface truncate">MIT-WPU Pune</span>
+<span class="px-2 py-0.5 bg-verified-badge/10 text-verified-badge font-label-sm text-label-sm rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Active
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">World Peace Univ, Paud Road, Kothrud</span>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<span class="font-headline-md text-headline-md text-secondary">42</span>
+<div class="font-label-sm text-label-sm text-outline">Verified PGs</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs bg-surface-container-low/60 p-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-rent-accent">directions_walk</span>
+<span>Starting 200m from Gate 2 &amp; 3</span>
+</div>
+<a class="px-space-md py-1.5 bg-rent-accent text-on-primary rounded-full font-label-md text-label-md flex items-center gap-1 shadow-sm" href="#">
+<span>Explore</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- College Card 2: COEP -->
+<div class="college-item relative bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md flex flex-col gap-space-sm transition-all active:scale-[0.99]" data-college="coep technological university shivajinagar engineering">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container-low text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface truncate">COEP Technological Univ.</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Wellesley Rd, Shivajinagar, Pune</span>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<span class="font-headline-md text-headline-md text-on-surface">38</span>
+<div class="font-label-sm text-label-sm text-outline">Verified PGs</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs bg-surface-container-low/60 p-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-rent-accent">directions_walk</span>
+<span>450m to Main Mechanical Gate</span>
+</div>
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-full font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span>Switch</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- College Card 3: Symbiosis -->
+<div class="college-item relative bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md flex flex-col gap-space-sm transition-all active:scale-[0.99]" data-college="symbiosis international viman nagar lavale scms sid sls">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container-low text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">apartment</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface truncate">Symbiosis International</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Viman Nagar Campus &amp; Lavale Hill Base</span>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<span class="font-headline-md text-headline-md text-on-surface">55</span>
+<div class="font-label-sm text-label-sm text-outline">Verified PGs</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs bg-surface-container-low/60 p-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-rent-accent">train</span>
+<span>Walking distance from Ramwadi Metro</span>
+</div>
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-full font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span>Switch</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- College Card 4: Bharati Vidyapeeth -->
+<div class="college-item relative bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md flex flex-col gap-space-sm transition-all active:scale-[0.99]" data-college="bharati vidyapeeth katraj bvp medical engineering">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container-low text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">domain</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface truncate">Bharati Vidyapeeth</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Katraj &amp; Dhankawadi Main Hub</span>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<span class="font-headline-md text-headline-md text-on-surface">31</span>
+<div class="font-label-sm text-label-sm text-outline">Verified PGs</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs bg-surface-container-low/60 p-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-rent-accent">directions_walk</span>
+<span>150m from Dental &amp; Med College Gate</span>
+</div>
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-full font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span>Switch</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- College Card 5: PICT -->
+<div class="college-item relative bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md flex flex-col gap-space-sm transition-all active:scale-[0.99]" data-college="pict pune institute computer technology dhankawadi">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container-low text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">memory</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface truncate">PICT Pune</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Survey No. 27, Dhankawadi</span>
+</div>
+</div>
+<div class="shrink-0 text-right">
+<span class="font-headline-md text-headline-md text-on-surface">26</span>
+<div class="font-label-sm text-label-sm text-outline">Verified PGs</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-2xs bg-surface-container-low/60 p-space-sm rounded-DEFAULT">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-rent-accent">directions_walk</span>
+<span>Hostel belt right opposite rear gate</span>
+</div>
+<button class="px-space-md py-1.5 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-full font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span>Switch</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Empty Search State -->
+<div class="hidden flex-col items-center justify-center py-space-xl text-center" id="empty-search-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[32px] text-outline">sentiment_dissatisfied</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Campus Not Found</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[260px] mb-space-md">
+        Can't find your college? Request on-ground verification or scan your gate's QR poster.
+      </p>
+<button class="px-space-lg py-2 bg-rent-accent text-on-primary rounded-full font-label-md text-label-md shadow-sm" type="button">
+        Request College Addition
+      </button>
+</div>
+</section>
+<!-- Campus Ambassadors Banner -->
+<section class="px-gutter-mobile pb-space-lg">
+<div class="relative overflow-hidden rounded-lg bg-surface-container p-space-md flex items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Are you a Student Rep?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Request official Stayable QR stands for your campus</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline shrink-0">chevron_right</span>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    const searchInput = document.getElementById('college-search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const collegeItems = document.querySelectorAll('.college-item');
+    const emptyState = document.getElementById('empty-search-state');
+    const cameraBtn = document.getElementById('activate-camera-btn');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        let matchCount = 0;
+
+        if (query.length > 0) {
+          clearBtn.classList.remove('hidden');
+          clearBtn.classList.add('flex');
+        } else {
+          clearBtn.classList.add('hidden');
+          clearBtn.classList.remove('flex');
+        }
+
+        collegeItems.forEach(item => {
+          const collegeData = item.getAttribute('data-college') || '';
+          if (collegeData.includes(query)) {
+            item.style.display = 'flex';
+            matchCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        if (matchCount === 0 && query.length > 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      });
+    }
+
+    if (clearBtn && searchInput) {
+      clearBtn.addEventListener('click', function() {
+        searchInput.value = '';
+        searchInput.dispatchEvent(new Event('input'));
+        searchInput.focus();
+      });
+    }
+
+    if (cameraBtn) {
+      cameraBtn.addEventListener('click', function() {
+        // Haptic feedback micro interaction
+        if (navigator.vibrate) {
+          navigator.vibrate(25);
+        }
+        const originalText = cameraBtn.innerHTML;
+        cameraBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Starting Lens Engine...</span>';
+        setTimeout(() => {
+          cameraBtn.innerHTML = originalText;
+        }, 1200);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.06)]" data-active-classes="text-secondary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm">Explore</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors relative" data-path="saved" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="absolute -top-1 -right-2 px-1.5 py-0.2 bg-secondary text-on-secondary rounded-full font-label-sm text-[10px] leading-tight flex items-center justify-center min-w-[16px] h-[16px]">3</span></div><span class="font-label-sm text-label-sm">Saved</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs -mt-3 group text-secondary font-semibold" data-path="qr-scan" href="#"><div class="w-11 h-11 rounded-full bg-rent-accent text-on-primary flex items-center justify-center shadow-[0_4px_12px_rgba(15,23,42,0.25)] transition-transform active:scale-95"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span></div><span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface">QR Scan</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors" data-path="enquiries" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-label-sm">Enquiries</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-touch-target-min gap-space-2xs text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

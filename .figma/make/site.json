@@ -1,0 +1,10 @@
+{
+  "description": "This web application offers users a seamless platform for booking and managing short-term stays, enhancing travel experiences with easy navigation and personalized options.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

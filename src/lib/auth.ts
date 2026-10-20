@@ -1,0 +1,90 @@
+import { supabase } from "./supabase"
+
+export async function signUpStudent(email: string, password: string) {
+  const { data, error } = await supabase.auth.signUp({ email, password, options: { data: { role: "student" } } })
+
+  if (error) throw error
+
+  return data
+}
+
+export async function signUpOwner(
+  email: string,
+  password: string,
+  fullName: string,
+  phone: string,
+) {
+  const { data, error } = await supabase.auth.signUp({
+    email,
+
+    password,
+
+    options: { data: { full_name: fullName, phone, role: "owner" } },
+  })
+
+  if (error) throw error
+
+  return data
+}
+
+export async function signInWithEmail(email: string, password: string) {
+  const { data, error } = await supabase.auth.signInWithPassword({
+    email,
+    password,
+  })
+
+  if (error) throw error
+
+  return data
+}
+
+export async function signInStudent(email: string) {
+  const { data, error } = await supabase.auth.signInWithOtp({
+    email,
+
+    options: { shouldCreateUser: true },
+  })
+
+  if (error) throw error
+
+  return data
+}
+
+export async function verifyOtp(email: string, token: string) {
+  const { data, error } = await supabase.auth.verifyOtp({
+    email,
+    token,
+    type: "magiclink",
+  })
+
+  if (error) throw error
+
+  return data
+}
+
+export async function signOut() {
+  const { error } = await supabase.auth.signOut()
+
+  if (error) throw error
+}
+
+export async function getSession() {
+  const { data } = await supabase.auth.getSession()
+
+  return data.session
+}
+
+export async function getUserProfile(userId: string) {
+  const { data, error } = await supabase
+    .from("profiles")
+    .select("*")
+    .eq("id", userId)
+    .single()
+
+  if (error && error.code !== "PGRST116") {
+    // PGRST116 = row not found (profile not yet created by trigger)
+    console.warn("[getUserProfile]", error.message)
+  }
+
+  return data
+}
